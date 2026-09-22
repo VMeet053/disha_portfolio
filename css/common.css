@@ -1,0 +1,89 @@
+/********** Template CSS **********/
+html { scroll-padding-top: 80px; }
+img { max-width: 100%; }
+
+@media (max-width: 575.98px) {
+    .back-to-top { right: 16px; bottom: 16px; }
+}
+
+:root {
+    --primary: #6244C5;
+    --secondary: #FFC448;
+    --light: #FAFAFB;
+    --dark: #12141D;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+.header-shell-1 {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+:is(.header-column-1,.about-content-1,.expertise-content-1,.service-shell-1,.projects-content-1,.team-content-1) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+
+
+
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+:is(.header-link-1,.about-link-1,.service-link-1,.projects-link-1,.projects-link-2,.projects-link-3,.projects-link-4,.projects-link-5,.projects-link-6,.projects-link-7,.projects-link-8,.projects-link-9,.projects-link-10,.projects-link-11,.projects-link-12,.team-link-1,.contact-link-1,.contact-link-2,.contact-link-3,.contact-link-4,.contact-link-5,.contact-button-1,.copyright-link-3) {
+    font-weight: 500;
+    transition: .5s;
+}
+
+:is(.header-link-1,.about-link-1,.service-link-1,.projects-link-1,.projects-link-2,.projects-link-3,.projects-link-4,.projects-link-5,.projects-link-6,.projects-link-7,.projects-link-8,.projects-link-9,.projects-link-10,.projects-link-11,.projects-link-12,.team-link-1,.contact-link-1,.contact-link-2,.contact-link-3,.contact-link-4,.contact-link-5,.contact-button-1,.copyright-link-3):is(.header-link-1,.about-link-1,.service-link-1,.team-link-1,.contact-link-1,.contact-link-2,.contact-link-3,.contact-link-4,.contact-link-5,.contact-button-1,.copyright-link-3),
+:is(.header-link-1,.about-link-1,.service-link-1,.projects-link-1,.projects-link-2,.projects-link-3,.projects-link-4,.projects-link-5,.projects-link-6,.projects-link-7,.projects-link-8,.projects-link-9,.projects-link-10,.projects-link-11,.projects-link-12,.team-link-1,.contact-link-1,.contact-link-2,.contact-link-3,.contact-link-4,.contact-link-5,.contact-button-1,.copyright-link-3).btn-secondary {
+    color: #FFFFFF;
+}
+
+:is(.contact-link-2,.contact-link-3,.contact-link-4,.contact-link-5) {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+:is(.projects-link-1,.projects-link-2,.projects-link-3,.projects-link-4,.projects-link-5,.projects-link-6,.projects-link-7,.projects-link-8,.projects-link-9,.projects-link-10,.projects-link-11,.projects-link-12,.copyright-link-3) {
+    width: 48px;
+    height: 48px;
+}
+
+:is(.contact-link-2,.contact-link-3,.contact-link-4,.contact-link-5),
+.btn-sm-square,
+:is(.projects-link-1,.projects-link-2,.projects-link-3,.projects-link-4,.projects-link-5,.projects-link-6,.projects-link-7,.projects-link-8,.projects-link-9,.projects-link-10,.projects-link-11,.projects-link-12,.copyright-link-3) {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+
+

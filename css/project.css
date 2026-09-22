@@ -1,0 +1,106 @@
+#project .project-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+#project .project-card {
+    display: block;
+    min-width: 0;
+    overflow: hidden;
+    color: var(--dark);
+    background: #fff;
+    border: 1px solid #e6e2ef;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(18, 20, 29, .06);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+#project .project-card[hidden] { display: none; }
+
+#project .project-pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 32px;
+}
+
+#project .project-pagination button {
+    min-width: 42px;
+    height: 42px;
+    padding: 0 10px;
+    border: 1px solid var(--primary);
+    border-radius: 6px;
+    background: #fff;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+#project .project-pagination button:hover,
+#project .project-pagination button:focus-visible,
+#project .project-pagination button.active {
+    background: var(--primary);
+    color: #fff;
+}
+
+#project .project-card:hover,
+#project .project-card:focus-visible {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(18, 20, 29, .15);
+}
+
+#project .project-preview {
+    display: block;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: #f4f1fb;
+}
+
+#project .project-preview img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+#project .project-preview img[hidden] { display: none; }
+
+#project .project-preview.preview-failed {
+    display: grid;
+    place-items: center;
+}
+
+#project .project-preview.preview-failed::after {
+    content: 'Homepage preview unavailable';
+    padding: 16px;
+    color: #686a75;
+    text-align: center;
+}
+
+#project .project-details {
+    display: grid;
+    gap: 3px;
+    padding: 15px 18px 17px;
+}
+
+#project .project-details strong {
+    font-size: 1rem;
+    color: var(--dark);
+}
+
+#project .project-details small {
+    overflow: hidden;
+    color: #686a75;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media (max-width: 991.98px) {
+    #project .project-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 575.98px) {
+    #project .project-gallery { grid-template-columns: 1fr; }
+}
