@@ -257,6 +257,8 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:90;op
 .js .reveal{opacity:0;transform:translateY(36px);transition:opacity 1s var(--ease),transform 1s var(--ease);transition-delay:var(--d,0s)}
 .js .reveal.in{opacity:1;transform:none}
 
+.js .edu__card.reveal.in:hover{transform:translateY(-6px)}
+
 /* ---------- responsive ---------- */
 @media (max-width:1080px){
   .stack{grid-template-columns:repeat(2,1fr)}
