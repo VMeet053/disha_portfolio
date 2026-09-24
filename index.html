@@ -1,898 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <title>Full Stack Developer Portfolio</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Disha Hingu — Full Stack &amp; Shopify Developer</title>
+  <meta name="description" content="Disha Hingu is a full stack developer with 4.5+ years building Shopify stores, WordPress sites, React front ends and custom Laravel CRMs for businesses in India and abroad.">
+  <meta name="theme-color" content="#f7f4ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#14111c" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://disha-portfolio-rose.vercel.app/">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://disha-portfolio-rose.vercel.app/">
+  <meta property="og:title" content="Disha Hingu — Full Stack &amp; Shopify Developer">
+  <meta property="og:description" content="Shopify, WordPress, React and Laravel. Fast, clean websites and custom tools for growing businesses.">
+  <meta property="og:image" content="https://disha-portfolio-rose.vercel.app/assets/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/disha.webp">
+  <link rel="stylesheet" href="css/styles.css">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-
-    <link href="css/base.css" rel="stylesheet">
-    <link href="css/common.css" rel="stylesheet">
-    <link href="css/navbar.css" rel="stylesheet">
-    <link href="css/home.css" rel="stylesheet">
-    <link href="css/about.css" rel="stylesheet">
-    <link href="css/skill.css" rel="stylesheet">
-    <link href="css/service.css" rel="stylesheet">
-    <link href="css/project.css" rel="stylesheet">
-    <link href="css/team.css" rel="stylesheet">
-    <link href="css/testimonial.css" rel="stylesheet">
-    <link href="css/contact.css" rel="stylesheet">
+  <script>document.documentElement.classList.add('js')</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Disha Hingu",
+    "jobTitle": "Full Stack Developer",
+    "url": "https://disha-portfolio-rose.vercel.app/",
+    "email": "mailto:dishahingu3007@gmail.com",
+    "telephone": "+91 78743 19733",
+    "image": "https://disha-portfolio-rose.vercel.app/assets/disha.webp",
+    "knowsAbout": ["Shopify", "WordPress", "React", "Next.js", "Laravel", "PHP", "Node.js"],
+    "alumniOf": ["Jain University", "Veer Narmad South Gujarat University"]
+  }
+  </script>
 </head>
-
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show spinner-group-1">
-        <div class="spinner-group-2" role="status">
-            <span class="spinner-label-1">Loading...</span>
-        </div>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="Disha Hingu — home">
+        <span class="brand-mark" aria-hidden="true">DH</span>
+        <span class="brand-name">Disha Hingu</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+      <nav id="nav-menu" class="nav-menu" aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#stack">Stack</a>
+        <a class="btn btn-small" href="#contact">Let’s talk</a>
+      </nav>
     </div>
-    <!-- Spinner End -->
+  </header>
 
-
-    <!-- Navbar Start -->
-    <nav class="wow fadeIn primary-navigation navbar-navigation-1" data-wow-delay="0.1s">
-        <a href="index.html" class="navbar-link-1">
-            <h1 class="navbar-heading-1">Hingu Disha</h1>
-        </a>
-        <button type="button" class="navigation-toggle" data-ui-toggle="collapse" data-ui-target="#navbarCollapse">
-            <span class="navbar-label-1"></span>
-        </button>
-        <div class="navbar-group-1 navigation-panel" id="navbarCollapse">
-            <div class="navigation-links navbar-group-2">
-                <a href="#home" class="active navbar-link-2">Home</a>
-                <a href="#about" class="navbar-link-3">About</a>
-                <a href="#skill" class="navbar-link-4">Skills</a>
-                <a href="#service" class="navbar-link-5">Services</a>
-            </div>
-            <a href="index.html" class="navbar-link-6">
-                <h1 class="navbar-heading-2">Hingu Disha</h1>
-            </a>
-            <div class="navigation-links navbar-group-3">
-                <a href="#project" class="navbar-link-7">Projects</a>
-                <!-- <a href="#team" class="navbar-link-8">Team</a> -->
-                <a href="#testimonial" class="navbar-link-9">Testimonial</a>
-                <a href="#contact" class="navbar-link-10">Contact</a>
-            </div>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="status"><span class="dot" aria-hidden="true"></span> Available for new projects</p>
+          <h1>Websites and stores that are <mark>fast, clear</mark> and built to grow.</h1>
+          <p class="lead">I’m <strong>Disha Hingu</strong>, a full stack developer with 4.5+ years building Shopify stores, WordPress sites, React front ends and custom Laravel tools for businesses in India and abroad.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#contact">Start a project <span aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost" href="#work">See my work</a>
+            <!-- To add a CV: put the PDF at /assets/Disha-Hingu-CV.pdf and uncomment:
+            <a class="btn btn-ghost" href="assets/Disha-Hingu-CV.pdf" download>Download CV</a> -->
+          </div>
+          <dl class="stats">
+            <div><dt>Experience</dt><dd>4.5+ yrs</dd></div>
+            <div><dt>Live sites below</dt><dd>20+</dd></div>
+            <div><dt>Specialty</dt><dd>Shopify</dd></div>
+          </dl>
         </div>
-    </nav>
-    <!-- Navbar End -->
-
-
-    <!-- Header Start -->
-    <div class="header-shell-1" id="home">
-        <div class="header-content-1">
-            <div class="header-grid-1">
-                <div class="header-column-1">
-                    <h3 class="header-heading-1">I'm</h3>
-                    <h1 class="header-heading-2">Hingu Disha</h1>
-                    <h2 class="typed-text-output header-heading-3"></h2>
-                    <div class="typed-text header-group-1">Web Designer, Web Developer, Front End Developer, Backend Developer, Shopify and WordPress Developer</div>
-                    <div class="header-group-2">
-                        <a href="" class="header-link-1">Download CV</a>
-                        <!-- <button type="button" class="btn-play" data-ui-toggle="modal"
-                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-ui-target="#videoModal">
-                            <span></span>
-                        </button>
-                        <h5 class="header-heading-4">Play Video</h5> -->
-                    </div>
-                </div>
-                <div class="header-column-2">
-                    <img class="header-image-1" src="img/disha.png" alt="">
-                </div>
-            </div>
+        <div class="hero-photo">
+          <div class="photo-bg" aria-hidden="true"></div>
+          <img src="assets/disha.webp" width="760" height="1069" alt="Portrait of Disha Hingu" fetchpriority="high">
+          <div class="chip chip-a" aria-hidden="true">Shopify · Liquid</div>
+          <div class="chip chip-b" aria-hidden="true">Laravel · React</div>
         </div>
-    </div>
-    <!-- Header End -->
-
-
-    <!-- Video Modal Start -->
-    <!-- <div class="video-modal-group-1" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> -->
-        <!-- <div class="video-modal-group-2"> -->
-            <!-- <div class="video-modal-group-3"> -->
-                <!-- <div class="video-modal-group-4"> -->
-                    <!-- <h3 class="video-modal-heading-1" id="exampleModalLabel">Youtube Video</h3> -->
-                    <!-- <button type="button" class="video-modal-button-1" data-ui-dismiss="modal" aria-label="Close"></button> -->
-                <!-- </div> -->
-                <!-- <div class="video-modal-group-5"> -->
-                    <!-- 16:9 aspect ratio -->
-                    <!-- <div class="video-modal-group-6"> -->
-                        <!-- <iframe class="video-modal-group-7" src="" id="video" allowfullscreen allowscriptaccess="always" -->
-                            <!-- allow="autoplay"></iframe> -->
-                    <!-- </div> -->
-                <!-- </div> -->
-            <!-- </div> -->
-        <!-- </div> -->
-    <!-- </div> -->
-    <!-- Video Modal End -->
-
-
-    <!-- About Start -->
-    <div class="about-content-1" id="about">
-        <div class="about-content-2">
-            <div class="about-grid-1">
-                <div class="wow fadeInUp about-column-1" data-wow-delay="0.1s">
-                    <div class="about-group-1">
-                        <div class="years about-group-2">
-                            <h1 class="about-heading-1">4.5</h1>
-                            <h5 class="about-heading-2">Years</h5>
-                        </div>
-                        <h3 class="about-heading-3">of working experience as a Full Stack Developer</h3>
-                    </div>
-                    <p class="about-text-1">Built for Performance. Designed for Growth.
-
-We deliver reliable and scalable development solutions tailored to your business needs. From modern web applications to custom software solutions, our team focuses on quality, performance, and seamless user experiences.</p>
-                    <p class="about-text-2"><i class="far fa-check-circle about-text-3"></i>Afordable Prices</p>
-                    <p class="about-text-4"><i class="far fa-check-circle about-text-5"></i>High Quality Product</p>
-                    <p class="about-text-6"><i class="far fa-check-circle about-text-7"></i>On Time Project Delivery</p>
-                    <a class="about-link-1" href="">Read More</a>
-                </div>
-                <div class="wow fadeInUp about-column-2" data-wow-delay="0.5s">
-                    <div class="about-grid-2">
-                        <div class="about-column-3">
-                            <img class="about-image-1" src="img/download.jpg" alt="">
-                        </div>
-                        <div class="about-column-4">
-                            <img class="about-image-2" src="img/office.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="about-group-3">
-                        <h5 class="about-heading-4">Happy Clients</h5>
-                        <h2 class="about-heading-5" data-toggle="counter-up">150</h2>
-                    </div>
-                    <p class="about-text-8">We build long-term partnerships by delivering reliable solutions, responsive support, and results that help businesses grow.</p>
-                    <div class="about-group-4">
-                        <h5 class="about-heading-6">Projects Completed</h5>
-                        <h2 class="about-heading-7" data-toggle="counter-up">300</h2>
-                    </div>
-                    <p class="about-text-9">From business websites to custom applications, we successfully deliver projects with a strong focus on performance, scalability, and quality.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
-
-
-    <!-- Expertise Start -->
-    <div class="expertise-content-1" id="skill">
-        <div class="expertise-content-2">
-            <div class="expertise-grid-1">
-                <div class="wow fadeInUp expertise-column-1" data-wow-delay="0.1s">
-                    <h1 class="expertise-heading-1">Skills & Experience</h1>
-                    <p class="expertise-text-1">I’m a passionate Software Developer with 3+ years of experience building modern, scalable, and user-friendly digital solutions. I specialize in Web Development, Mobile App Development, and Shopify Development, with a strong focus on clean UI, performance, and business-driven solutions.</p>
-                    <h3 class="expertise-heading-2">My Skills</h3>
-                    <div class="expertise-grid-2">
-                        <div class="expertise-column-2">
-                            <div class="skill expertise-group-1">
-                                <div class="expertise-group-2">
-                                    <h6 class="expertise-heading-3">HTML</h6>
-                                    <h6 class="expertise-heading-4">95%</h6>
-                                </div>
-                                <div class="skill-meter">
-                                    <div class="skill-meter-fill expertise-group-4" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-
-                            
-                            <div class="skill expertise-group-5">
-                                <div class="expertise-group-6">
-                                    <h6 class="expertise-heading-5">CSS</h6>
-                                    <h6 class="expertise-heading-6">90%</h6>
-                                </div>
-                                <div class="skill-meter">
-                                    <div class="skill-meter-fill expertise-group-8" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill expertise-group-9">
-                                <div class="expertise-group-10">
-                                    <h6 class="expertise-heading-7">PHP</h6>
-                                    <h6 class="expertise-heading-8">90%</h6>
-                                </div>
-                                <div class="skill-meter">
-                                    <div class="skill-meter-fill expertise-group-12" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                              <div class="skill expertise-group-13">
-                                <div class="expertise-group-14">
-                                    <h6 class="expertise-heading-9">Node Js</h6>
-                                    <h6 class="expertise-heading-10">90%</h6>
-                                </div>
-                                <div class="skill-meter">
-                                    <div class="skill-meter-fill expertise-group-16" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-
-                               <div class="skill expertise-group-13">
-                                <div class="expertise-group-14">
-                                    <h6 class="expertise-heading-9">Git / Github</h6>
-                                    <h6 class="expertise-heading-10">90%</h6>
-                                </div>
-                                <div class="skill-meter">
-                                    <div class="skill-meter-fill expertise-group-16" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="expertise-column-3">
-                            <div class="skill expertise-group-17">
-                                <div class="expertise-group-18">
-                                    <h6 class="expertise-heading-11">Javascript</h6>
-                                    <h6 class="expertise-heading-12">90%</h6>
-                                </div>
-                                <div class="skill-meter">
-                                    <div class="skill-meter-fill expertise-group-20" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill expertise-group-21">
-                                <div class="expertise-group-22">
-                                    <h6 class="expertise-heading-13">React JS</h6>
-                                    <h6 class="expertise-heading-14">95%</h6>
-                                </div>
-                                <div class="skill-meter">
-                                    <div class="skill-meter-fill expertise-group-24" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill expertise-group-25">
-                                <div class="expertise-group-26">
-                                    <h6 class="expertise-heading-15">Wordpress</h6>
-                                    <h6 class="expertise-heading-16">85%</h6>
-                                </div>
-                                <div class="skill-meter">
-                                    <div class="skill-meter-fill expertise-group-28" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                              <div class="skill expertise-group-29">
-                                <div class="expertise-group-30">
-                                    <h6 class="expertise-heading-17">Shopify</h6>
-                                    <h6 class="expertise-heading-18">90%</h6>
-                                </div>
-                                <div class="skill-meter">
-                                    <div class="skill-meter-fill expertise-group-32" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-
-                                  <div class="skill expertise-group-29">
-                                <div class="expertise-group-30">
-                                    <h6 class="expertise-heading-17">Vercel / AWS</h6>
-                                    <h6 class="expertise-heading-18">90%</h6>
-                                </div>
-                                <div class="skill-meter">
-                                    <div class="skill-meter-fill expertise-group-32" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="wow fadeInUp expertise-column-4" data-wow-delay="0.5s">
-                    <ul class="expertise-list-1 skill-tabs">
-                        <li class="expertise-list-item-1">
-                            <button class="active expertise-button-1" data-ui-toggle="pill" href="#tab-1">Experience</button>
-                        </li>
-                        <li class="expertise-list-item-2">
-                            <button class="expertise-button-2" data-ui-toggle="pill" href="#tab-2">Education</button>
-                        </li>
-                    </ul>
-                    <div class="expertise-group-33">
-                        <div id="tab-1" class="show active skill-panel expertise-group-34">
-                            <div class="expertise-grid-3">
-                                <div class="expertise-column-5">
-                                    <h5>Jr. Laravel Developer </h5>
-                                    <hr class="expertise-group-35">
-                                    <p class="expertise-text-2">2021 - 2022</p>
-                                    <h6 class="expertise-heading-19">Welpel Infotech</h6>
-                                </div>
-                                <div class="expertise-column-6">
-                                    <h5>Laravel / Shopify Developer (Remote)</h5>
-                                    <hr class="expertise-group-36">
-                                    <p class="expertise-text-3">2022 - 2023</p>
-                                    <h6 class="expertise-heading-20">Heaven Infotech</h6>
-                                </div>
-                                <div class="expertise-column-5">
-                                    <h5>Full Stack Developer </h5>
-                                    <hr class="expertise-group-35">
-                                    <p class="expertise-text-2">2023 - 2025</p>
-                                    <h6 class="expertise-heading-19">PPlacecode Solution Pvt Ltd</h6>
-                                </div>
-                                <div class="expertise-column-6">
-                                    <h5>Full time Freelancer</h5>
-                                    <hr class="expertise-group-36">
-                                    <p class="expertise-text-3">2025 - Present</p>
-                                    <h6 class="expertise-heading-20">Hexafusion Infotech</h6>
-                                </div>
-                                <!-- <div class="expertise-column-7">
-                                    <h5>Web Designer</h5>
-                                    <hr class="expertise-group-37">
-                                    <p class="expertise-text-4">2000 - 2045</p>
-                                    <h6 class="expertise-heading-21">Apex Software Inc</h6>
-                                </div>
-                                <div class="expertise-column-8">
-                                    <h5>Apps Designer</h5>
-                                    <hr class="expertise-group-38">
-                                    <p class="expertise-text-5">2000 - 2045</p>
-                                    <h6 class="expertise-heading-22">Apex Software Inc</h6>
-                                </div> -->
-                            </div>
-                        </div>
-                        <div id="tab-2" class="show skill-panel expertise-group-39">
-                            <div class="expertise-grid-4">
-                                <div class="expertise-column-9">
-                                    <h5>Bachelor of Computer Applications (BCA)</h5>
-                                    <hr class="expertise-group-40">
-                                    <p class="expertise-text-6">2018 - 2021</p>
-                                    <h6 class="expertise-heading-23">Veer Narmad South Gujarat University</h6>
-                                </div>
-                                <!-- <div class="expertise-column-10">
-                                    <h5>IOS Development</h5>
-                                    <hr class="expertise-group-41">
-                                    <p class="expertise-text-7">2000 - 2045</p>
-                                    <h6 class="expertise-heading-24">Cambridge University</h6>
-                                </div> -->
-                                <div class="expertise-column-11">
-                                    <h5>Master of Computer Applications (MCA)</h5>
-                                    <hr class="expertise-group-42">
-                                    <p class="expertise-text-8">2021 - 2023</p>
-                                    <h6 class="expertise-heading-25">Jain University</h6>
-                                </div>
-                                <!-- <div class="expertise-column-12">
-                                    <h5>Apps Design</h5>
-                                    <hr class="expertise-group-43">
-                                    <p class="expertise-text-9">2000 - 2045</p>
-                                    <h6 class="expertise-heading-26">Cambridge University</h6>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Expertise End -->
-
-
-    <!-- Service Start -->
-    <div class="service-shell-1" id="service">
-        <div class="service-content-1">
-            <div class="wow fadeInUp service-grid-1" data-wow-delay="0.1s">
-                <div class="service-column-1">
-                    <h1 class="service-heading-1">My Services</h1>
-                </div>
-                <div class="service-column-2">
-                    <a class="service-link-1" href="">Hire Me</a>
-                </div>
-            </div>
-            <div class="service-grid-2">
-                <div class="wow fadeInUp service-column-3" data-wow-delay="0.1s">
-                    <div class="service-item service-card-1">
-                        <div class="bg-icon service-group-1">
-                            <i class="fa fa-crop-alt fa-2x service-group-2"></i>
-                        </div>
-                        <div class="service-group-3">
-                            <h4 class="service-heading-2">Web Design</h4>
-                            <!-- <h6 class="service-heading-3">Start from <span class="service-heading-4">$199</span></h6> -->
-                            <span>Create modern, responsive, and visually engaging websites with clean layouts and user-focused designs.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="wow fadeInUp service-column-4" data-wow-delay="0.3s">
-                    <div class="service-item service-card-2">
-                        <div class="bg-icon service-group-4">
-                            <i class="fa fa-code-branch fa-2x service-group-5"></i>
-                        </div>
-                        <div class="service-group-6">
-                            <h4 class="service-heading-5">Web Development</h4>
-                            <!-- <h6 class="service-heading-6">Start from <span class="service-heading-7">$199</span></h6> -->
-                            <span>Build fast, secure, and scalable websites using modern technologies tailored to business requirements.</span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-
-                    <div class="wow fadeInUp service-column-5" data-wow-delay="0.3s">
-                    <div class="service-item service-card-3">
-                        <div class="bg-icon service-group-7">
-                            <i class="fa fa-code-branch fa-2x service-group-8"></i>
-                        </div>
-                        <div class="service-group-9">
-                            <h4 class="service-heading-8">Frontend Development</h4>
-                            <!-- <h6 class="service-heading-9">Start from <span class="service-heading-10">$199</span></h6> -->
-                            <span>Develop responsive and interactive user interfaces using React.js, Next.js, JavaScript, and Tailwind CSS.</span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="wow fadeInUp service-column-6" data-wow-delay="0.1s">
-                    <div class="service-item service-card-4">
-                        <div class="bg-icon service-group-10">
-                            <i class="fa fa-code fa-2x service-group-11"></i>
-                        </div>
-                        <div class="service-group-12">
-                            <h4 class="service-heading-11">Backend Development</h4>
-                            <!-- <h6 class="service-heading-12">Start from <span class="service-heading-13">$199</span></h6> -->
-                            <span>Develop reliable backend systems, REST APIs, databases, authentication, and server-side functionality.</span>
-                        </div>
-                    </div>
-                </div>
-
-                      <div class="wow fadeInUp service-column-7" data-wow-delay="0.1s">
-                    <div class="service-item service-card-5">
-                        <div class="bg-icon service-group-13">
-                            <i class="fa fa-code fa-2x service-group-14"></i>
-                        </div>
-                        <div class="service-group-15">
-                            <h4 class="service-heading-14">Shopify Development</h4>
-                            <!-- <h6 class="service-heading-15">Start from <span class="service-heading-16">$199</span></h6> -->
-                            <span>Create and customize Shopify stores, themes, sections, Liquid code, and custom Shopify solutions.</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="wow fadeInUp service-column-8" data-wow-delay="0.3s">
-                    <div class="service-item service-card-6">
-                        <div class="bg-icon service-group-16">
-                            <i class="fa fa-laptop-code fa-2x service-group-17"></i>
-                        </div>
-                        <div class="service-group-18">
-                            <h4 class="service-heading-17">Wordpress Development</h4>
-                            <!-- <h6 class="service-heading-18">Start from <span class="service-heading-19">$199</span></h6> -->
-                            <span>Build professional, responsive, and easy-to-manage WordPress websites with customized functionality.</span>
-                        </div>
-                    </div>
-                </div>
-                
-                     <div class="wow fadeInUp service-column-9" data-wow-delay="0.3s">
-                    <div class="service-item service-card-7">
-                        <div class="bg-icon service-group-19">
-                            <i class="fa fa-laptop-code fa-2x service-group-20"></i>
-                        </div>
-                        <div class="service-group-21">
-                            <h4 class="service-heading-20">Software Development</h4>
-                            <!-- <h6 class="service-heading-21">Start from <span class="service-heading-22">$199</span></h6> -->
-                            <span>Develop customized software solutions designed to streamline business processes and solve specific business needs.</span>
-                        </div>
-                    </div>
-                </div>
-                
-
-                  <div class="wow fadeInUp service-column-10" data-wow-delay="0.3s">
-                    <div class="service-item service-card-8">
-                        <div class="bg-icon service-group-22">
-                            <i class="fa fa-laptop-code fa-2x service-group-23"></i>
-                        </div>
-                        <div class="service-group-24">
-                            <h4 class="service-heading-23">CRM Development</h4>
-                            <!-- <h6 class="service-heading-24">Start from <span class="service-heading-25">$199</span></h6> -->
-                            <span>Build customized CRM solutions to manage customers, leads, sales, communication, and business operations efficiently.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            
-        </div>
-    </div>
-    <!-- Service End -->
-
-
-    <!-- Projects Start -->
-    <div class="projects-content-1" id="project">
-        <div class="projects-content-2">
-            <div class="wow fadeInUp projects-grid-1" data-wow-delay="0.1s">
-                <div class="projects-column-1">
-                    <h1 class="projects-heading-1">My Projects</h1>
-                </div>
-            </div>
-            <div class="project-gallery">
-                <a class="project-card" href="https://ziblonfashion.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Ziblon Fashion homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://ziblonfashion.com/" alt="Ziblon Fashion homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Ziblon Fashion</strong><small>ziblonfashion.com</small></span>
-                </a>
-                <a class="project-card" href="https://pangaeapathways.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Pangaea Pathways homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://pangaeapathways.com/" alt="Pangaea Pathways homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Pangaea Pathways</strong><small>pangaeapathways.com</small></span>
-                </a>
-                <a class="project-card" href="https://crm.pangaeapathways.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Pangaea CRM homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://crm.pangaeapathways.com/" alt="Pangaea CRM homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Pangaea CRM</strong><small>crm.pangaeapathways.com</small></span>
-                </a>
-                <a class="project-card" href="https://www.gharoocare.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Gharoo Care homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://www.gharoocare.com/" alt="Gharoo Care homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Gharoo Care</strong><small>www.gharoocare.com</small></span>
-                </a>
-                <a class="project-card" href="https://kirticonstruction.co.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit Kirti Construction homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://kirticonstruction.co.in/" alt="Kirti Construction homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Kirti Construction</strong><small>kirticonstruction.co.in</small></span>
-                </a>
-                <a class="project-card" href="https://alaknandadiamond.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Alaknanda Diamond homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://alaknandadiamond.com/" alt="Alaknanda Diamond homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Alaknanda Diamond</strong><small>alaknandadiamond.com</small></span>
-                </a>
-                <a class="project-card" href="https://www.indianrani.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Indian Rani homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://www.indianrani.com/" alt="Indian Rani homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Indian Rani</strong><small>www.indianrani.com</small></span>
-                </a>
-                <a class="project-card" href="https://venutaloza.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Venutaloza homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://venutaloza.com/" alt="Venutaloza homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Venutaloza</strong><small>venutaloza.com</small></span>
-                </a>
-                <a class="project-card" href="https://silicakart.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit Silica Kart homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://silicakart.in/" alt="Silica Kart homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Silica Kart</strong><small>silicakart.in</small></span>
-                </a>
-                <a class="project-card" href="https://ikonikbez.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit Ikonik Bez homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://ikonikbez.in/" alt="Ikonik Bez homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Ikonik Bez</strong><small>ikonikbez.in</small></span>
-                </a>
-                <a class="project-card" href="https://korppi.cloud/" target="_blank" rel="noopener noreferrer" aria-label="Visit Korppi homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://korppi.cloud/" alt="Korppi homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Korppi</strong><small>korppi.cloud</small></span>
-                </a>
-                <a class="project-card" href="https://www.strideahead.io/" target="_blank" rel="noopener noreferrer" aria-label="Visit Stride Ahead homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://www.strideahead.io/" alt="Stride Ahead homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Stride Ahead</strong><small>www.strideahead.io</small></span>
-                </a>
-                <a class="project-card" href="https://crafts77bazaar.store/" target="_blank" rel="noopener noreferrer" aria-label="Visit Crafts77 Bazaar homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://crafts77bazaar.store/" alt="Crafts77 Bazaar homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Crafts77 Bazaar</strong><small>crafts77bazaar.store</small></span>
-                </a>
-                <a class="project-card" href="https://www.eleosapp.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Eleos App homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://www.eleosapp.com/" alt="Eleos App homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Eleos App</strong><small>www.eleosapp.com</small></span>
-                </a>
-                <a class="project-card" href="https://lemkus.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Lemkus homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://lemkus.com/" alt="Lemkus homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Lemkus</strong><small>lemkus.com</small></span>
-                </a>
-                <a class="project-card" href="https://williamabraham.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit William Abraham homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://williamabraham.com/" alt="William Abraham homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>William Abraham</strong><small>williamabraham.com</small></span>
-                </a>
-                <a class="project-card" href="https://www.houseplant.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Houseplant homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://www.houseplant.com/" alt="Houseplant homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Houseplant</strong><small>www.houseplant.com</small></span>
-                </a>
-                <a class="project-card" href="https://materialcreative.co.nz/" target="_blank" rel="noopener noreferrer" aria-label="Visit Material Creative homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://materialcreative.co.nz/" alt="Material Creative homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Material Creative</strong><small>materialcreative.co.nz</small></span>
-                </a>
-                <a class="project-card" href="https://drinkperfy.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Perfy homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://drinkperfy.com/" alt="Perfy homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Perfy</strong><small>drinkperfy.com</small></span>
-                </a>
-                <a class="project-card" href="https://fiatluxsf.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Fiat Lux homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://fiatluxsf.com/" alt="Fiat Lux homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Fiat Lux</strong><small>fiatluxsf.com</small></span>
-                </a>
-                <a class="project-card" href="https://simplynoted.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Simply Noted homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://simplynoted.com/" alt="Simply Noted homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Simply Noted</strong><small>simplynoted.com</small></span>
-                </a>
-                <a class="project-card" href="https://oakandeden.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Oak &amp; Eden homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://oakandeden.com/" alt="Oak &amp; Eden homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Oak &amp; Eden</strong><small>oakandeden.com</small></span>
-                </a>
-                <a class="project-card" href="https://www.allbirds.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Allbirds homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://www.allbirds.com/" alt="Allbirds homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Allbirds</strong><small>www.allbirds.com</small></span>
-                </a>
-                <a class="project-card" href="https://maidenhome.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Maiden Home homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://maidenhome.com/" alt="Maiden Home homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Maiden Home</strong><small>maidenhome.com</small></span>
-                </a>
-                <a class="project-card" href="https://shwoodshop.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Shwood homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://shwoodshop.com/" alt="Shwood homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Shwood</strong><small>shwoodshop.com</small></span>
-                </a>
-                <a class="project-card" href="https://tattly.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Tattly homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://tattly.com/" alt="Tattly homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Tattly</strong><small>tattly.com</small></span>
-                </a>
-                <a class="project-card" href="https://www.studioproper.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Studio Proper homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://www.studioproper.com/" alt="Studio Proper homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Studio Proper</strong><small>www.studioproper.com</small></span>
-                </a>
-                <a class="project-card" href="https://hauserstores.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Hauser Stores homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://hauserstores.com/" alt="Hauser Stores homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Hauser Stores</strong><small>hauserstores.com</small></span>
-                </a>
-                <a class="project-card" href="https://popchart.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Pop Chart homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://popchart.com/" alt="Pop Chart homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Pop Chart</strong><small>popchart.com</small></span>
-                </a>
-                <a class="project-card" href="https://biontechindia.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Biontech India homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://biontechindia.com/" alt="Biontech India homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Biontech India</strong><small>biontechindia.com</small></span>
-                </a>
-                <a class="project-card" href="https://takeimpact.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Take Impact homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://takeimpact.com/" alt="Take Impact homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Take Impact</strong><small>takeimpact.com</small></span>
-                </a>
-                <a class="project-card" href="https://naturesnctar.dk/" target="_blank" rel="noopener noreferrer" aria-label="Visit Natures Nctar homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://naturesnctar.dk/" alt="Natures Nctar homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Natures Nctar</strong><small>naturesnctar.dk</small></span>
-                </a>
-                <a class="project-card" href="https://fe226.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit FE226 homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://fe226.com/" alt="FE226 homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>FE226</strong><small>fe226.com</small></span>
-                </a>
-                <a class="project-card" href="https://collectorscage.dk/" target="_blank" rel="noopener noreferrer" aria-label="Visit Collectors Cage homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://collectorscage.dk/" alt="Collectors Cage homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Collectors Cage</strong><small>collectorscage.dk</small></span>
-                </a>
-                <a class="project-card" href="https://lucidblanks.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Lucid Blanks homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://lucidblanks.com/" alt="Lucid Blanks homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Lucid Blanks</strong><small>lucidblanks.com</small></span>
-                </a>
-                <a class="project-card" href="https://optimasport.dk/" target="_blank" rel="noopener noreferrer" aria-label="Visit Optima Sport homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://optimasport.dk/" alt="Optima Sport homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Optima Sport</strong><small>optimasport.dk</small></span>
-                </a>
-                <a class="project-card" href="https://nordiczen.dk/" target="_blank" rel="noopener noreferrer" aria-label="Visit Nordic Zen homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://nordiczen.dk/" alt="Nordic Zen homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Nordic Zen</strong><small>nordiczen.dk</small></span>
-                </a>
-                <a class="project-card" href="https://laphont.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Laphont homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://laphont.com/" alt="Laphont homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Laphont</strong><small>laphont.com</small></span>
-                </a>
-                <a class="project-card" href="https://mayas.co/" target="_blank" rel="noopener noreferrer" aria-label="Visit Mayas homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://mayas.co/" alt="Mayas homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Mayas</strong><small>mayas.co</small></span>
-                </a>
-                <a class="project-card" href="https://audreyvallens.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Audrey Vallens homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://audreyvallens.com/" alt="Audrey Vallens homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Audrey Vallens</strong><small>audreyvallens.com</small></span>
-                </a>
-                <a class="project-card" href="https://reactivate.dk/" target="_blank" rel="noopener noreferrer" aria-label="Visit Reactivate homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://reactivate.dk/" alt="Reactivate homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Reactivate</strong><small>reactivate.dk</small></span>
-                </a>
-                <a class="project-card" href="https://www.krucible.world/" target="_blank" rel="noopener noreferrer" aria-label="Visit Krucible homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://www.krucible.world/" alt="Krucible homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Krucible</strong><small>www.krucible.world</small></span>
-                </a>
-                <a class="project-card" href="https://ajensenflyfishing.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit A Jensen Fly Fishing homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://ajensenflyfishing.com/" alt="A Jensen Fly Fishing homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>A Jensen Fly Fishing</strong><small>ajensenflyfishing.com</small></span>
-                </a>
-                <a class="project-card" href="https://db-shield.store/" target="_blank" rel="noopener noreferrer" aria-label="Visit DB Shield homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://db-shield.store/" alt="DB Shield homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>DB Shield</strong><small>db-shield.store</small></span>
-                </a>
-                <a class="project-card" href="https://colorculture.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Color Culture homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://colorculture.com/" alt="Color Culture homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Color Culture</strong><small>colorculture.com</small></span>
-                </a>
-                <a class="project-card" href="https://matmedlassen.dk/" target="_blank" rel="noopener noreferrer" aria-label="Visit Mat Med Lassen homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://matmedlassen.dk/" alt="Mat Med Lassen homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Mat Med Lassen</strong><small>matmedlassen.dk</small></span>
-                </a>
-                <a class="project-card" href="https://meotine.no/" target="_blank" rel="noopener noreferrer" aria-label="Visit Meotine homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://meotine.no/" alt="Meotine homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Meotine</strong><small>meotine.no</small></span>
-                </a>
-                <a class="project-card" href="https://www.didirosejewelry.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Didi Rose Jewelry homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://www.didirosejewelry.com/" alt="Didi Rose Jewelry homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Didi Rose Jewelry</strong><small>www.didirosejewelry.com</small></span>
-                </a>
-                <a class="project-card" href="https://7386a8-de.myshopify.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Shopify Store homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://7386a8-de.myshopify.com/" alt="Shopify Store homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Shopify Store</strong><small>7386a8-de.myshopify.com</small></span>
-                </a>
-                <a class="project-card" href="https://aquitaz.se/" target="_blank" rel="noopener noreferrer" aria-label="Visit Aquitaz homepage">
-                    <span class="project-preview"><img src="https://image.thum.io/get/width/800/crop/600/noanimate/https://aquitaz.se/" alt="Aquitaz homepage preview" loading="lazy" decoding="async"></span>
-                    <span class="project-details"><strong>Aquitaz</strong><small>aquitaz.se</small></span>
-                </a>
-            </div>
-            <nav class="project-pagination" aria-label="Project pages"></nav>
-        </div>
-    </div>
-    <!-- Projects End -->
-
-
-    <!-- Team Start -->
-    <!-- <div class="team-content-1" id="team">
-        <div class="team-content-2">
-            <div class="wow fadeInUp team-grid-1" data-wow-delay="0.1s">
-                <div class="team-column-1">
-                    <h1 class="team-heading-1">Team Members</h1>
-                </div>
-                <div class="team-column-2">
-                    <a class="team-link-1" href="">Contact Us</a>
-                </div>
-            </div>
-            <div class="team-grid-2">
-                <div class="wow fadeInUp team-column-3" data-wow-delay="0.1s">
-                    <div class="team-item team-group-1">
-                        <img class="team-image-1" src="img/team-1.jpg" alt="">
-                        <div class="team-text team-group-2">
-                            <div>
-                                <h5>Full Name</h5>
-                                <span>Designer</span>
-                            </div>
-                            <i class="fa fa-arrow-right fa-2x team-group-3"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="wow fadeInUp team-column-4" data-wow-delay="0.3s">
-                    <div class="team-item team-group-4">
-                        <img class="team-image-2" src="img/team-2.jpg" alt="">
-                        <div class="team-text team-group-5">
-                            <div>
-                                <h5>Full Name</h5>
-                                <span>Designer</span>
-                            </div>
-                            <i class="fa fa-arrow-right fa-2x team-group-6"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="wow fadeInUp team-column-5" data-wow-delay="0.5s">
-                    <div class="team-item team-group-7">
-                        <img class="team-image-3" src="img/team-3.jpg" alt="">
-                        <div class="team-text team-group-8">
-                            <div>
-                                <h5>Full Name</h5>
-                                <span>Designer</span>
-                            </div>
-                            <i class="fa fa-arrow-right fa-2x team-group-9"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Team End -->
-
-
-    <!-- Testimonial Start -->
-    <section class="testimonial-section" id="testimonial" aria-labelledby="testimonial-title">
-        <div class="testimonial-content">
-            <div class="testimonial-intro">
-                <span class="testimonial-eyebrow">Client perspectives</span>
-                <h2 id="testimonial-title">What Clients Say</h2>
-                <p>Examples of feedback from different projects and regions.</p>
-                <p class="testimonial-disclaimer">Sample review copy. Replace with verified client testimonials before publishing.</p>
-            </div>
-            <div class="review-slider" role="region" aria-roledescription="carousel" aria-label="Sample client reviews">
-                <div class="review-viewport">
-                    <div class="review-track">
-                <article class="review-card"><span class="review-region">India · Web design</span><blockquote>“The site now feels much easier to explore. The product pages are clear, and the mobile experience has improved noticeably.”</blockquote><p></p></article>
-                <article class="review-card"><span class="review-region">United Kingdom · E-commerce</span><blockquote>“Our new storefront presents the collection beautifully. The checkout journey is simpler, and updates are easier for our team to manage.”</blockquote><p></p></article>
-                <article class="review-card"><span class="review-region">India · CRM</span><blockquote>“The dashboard brought our leads and follow-ups into one place. It has made everyday coordination much more straightforward.”</blockquote><p></p></article>
-                <article class="review-card"><span class="review-region">Australia · Education</span><blockquote>“Visitors can find the right information quickly, and the enquiry flow is much clearer than it was on our previous website.”</blockquote><p></p></article>
-                <article class="review-card"><span class="review-region">India · Healthcare</span><blockquote>“The booking pages are clean and easy to use. Patients can understand our services without getting lost in the details.”</blockquote><p></p></article>
-                <article class="review-card"><span class="review-region">Denmark · Shopify</span><blockquote>“The store captures our brand well. Product discovery feels natural, and our team can make content changes without friction.”</blockquote><p></p></article>
-                <article class="review-card"><span class="review-region">India · Construction</span><blockquote>“The portfolio gives our projects room to speak for themselves. Enquiries now arrive with a better understanding of what we do.”</blockquote><p></p></article>
-                <article class="review-card"><span class="review-region">United States · Branding</span><blockquote>“The final pages feel considered and consistent. Small interactions make the experience polished without slowing it down.”</blockquote><p></p></article>
-                <article class="review-card"><span class="review-region">India · Jewellery</span><blockquote>“Our catalogue looks more refined, and customers can compare pieces comfortably on their phones.”</blockquote><p></p></article>
-                <article class="review-card"><span class="review-region">Norway · Performance</span><blockquote>“The site is faster and easier to maintain. The improvements are especially noticeable for visitors on smaller screens.”</blockquote><p></p></article>
-                <article class="review-card"><span class="review-region">India · Marketplace</span><blockquote>“The categories and search flow are far clearer. Customers can reach the right products with fewer steps.”</blockquote><p></p></article>
-                <article class="review-card"><span class="review-region">Canada · Custom development</span><blockquote>“The project was organised well from the first review to the final handover. The result fits the way our team actually works.”</blockquote><p></p></article>
-                    </div>
-                </div>
-                <div class="review-controls">
-                    <button class="review-previous" type="button" aria-label="Previous review">&#8592;</button>
-                    <span class="review-count">1 / 12</span>
-                    <button class="review-next" type="button" aria-label="Next review">&#8594;</button>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
-    <!-- Testimonial End -->
 
-
-    <!-- Contact Start -->
-    <section class="contact-section" id="contact" aria-labelledby="contact-title">
-        <div class="contact-content">
-            <div class="contact-heading-row">
-                <div>
-                    <span class="contact-eyebrow">Have a project in mind?</span>
-                    <h2 id="contact-title">Let's Work Together</h2>
-                </div>
-                <a class="contact-hello" href="mailto:v.meet0503@gmail.com">Say Hello</a>
-            </div>
-            <div class="contact-layout">
-                <div class="contact-info">
-                    <div class="contact-info-item">
-                        <span>Call me</span>
-                        <a href="tel:+917874319733">+91 78743 19733</a>
-                    </div>
-                    <div class="contact-info-item">
-                        <span>Mail me</span>
-                        <a href="mailto:dishahingu3007@gmail.com">dishahingu3007@gmail.com</a>
-                    </div>
-                </div>
-                <form class="contact-form" id="contact-form">
-                    <div class="contact-fields">
-                        <div class="contact-field">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" autocomplete="name" required>
-                        </div>
-                        <div class="contact-field">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" name="email" autocomplete="email" required>
-                        </div>
-                        <div class="contact-field contact-field-wide">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        <div class="contact-field contact-field-wide">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                    </div>
-                    <button class="contact-submit" type="submit">Send Message</button>
-                    <p class="contact-form-note" id="contact-form-note" role="status" aria-live="polite">Submitting opens your email app with the message ready to send.</p>
-                </form>
-            </div>
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">What I do</p>
+          <h2>From first design to a site your team can run.</h2>
         </div>
+        <div class="services">
+          <article class="card reveal">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></span>
+            <h3>Shopify development</h3>
+            <p>Custom themes, sections and Liquid code, app setup and store migrations, built so you can update products and content yourself.</p>
+          </article>
+          <article class="card reveal">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3.5 9h17M3.5 15h17M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18"/></svg></span>
+            <h3>WordPress websites</h3>
+            <p>Business sites that are easy to edit, with custom features where you need them and no plugin bloat where you don’t.</p>
+          </article>
+          <article class="card reveal">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M9 9l-2 2 2 2M15 9l2 2-2 2"/></svg></span>
+            <h3>Front end: React &amp; Next.js</h3>
+            <p>Responsive, accessible interfaces in React, Next.js, JavaScript and Tailwind CSS that look sharp on every screen.</p>
+          </article>
+          <article class="card reveal">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></span>
+            <h3>Back end &amp; APIs</h3>
+            <p>REST APIs, databases, authentication and server-side logic in Laravel, PHP and Node.js, deployed on Vercel or AWS.</p>
+          </article>
+          <article class="card reveal">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+            <h3>Custom CRMs &amp; software</h3>
+            <p>Dashboards that bring leads, customers and follow-ups into one place, shaped around how your team already works.</p>
+          </article>
+          <article class="card reveal">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5L12 3Z"/></svg></span>
+            <h3>Web design</h3>
+            <p>Clean, modern layouts focused on what visitors need, so product pages and enquiry forms convert.</p>
+          </article>
+        </div>
+      </div>
     </section>
-    <!-- Contact End -->
 
-
-    <!-- Map Start -->
-    <!-- <div class="wow fadeInUp map-content-1" data-wow-delay="0.1s">
-        <div class="map-content-2">
-            <div class="map-group-1">
-                <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
-                frameborder="0" style="width: 100%; height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
-            </div>
+    <!-- WORK -->
+    <section class="section section-alt" id="work">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Selected work</p>
+          <h2>Live projects you can visit.</h2>
         </div>
-    </div> -->
-    <!-- Map End -->
 
+        <div class="work-grid">
+          <!-- Preview images are live screenshots. For best results replace each src with a static screenshot in /assets/work/ -->
+          <a class="project reveal" href="https://ziblonfashion.com/" target="_blank" rel="noopener">
+            <div class="preview" data-initial="Z"><img loading="lazy" src="https://image.thum.io/get/width/900/crop/620/noanimate/https://ziblonfashion.com/" alt="Ziblon Fashion homepage" width="900" height="620"></div>
+            <div class="project-meta"><span class="tag">Shopify</span><span class="tag">Fashion e-commerce</span></div>
+            <h3>Ziblon Fashion <span class="arrow" aria-hidden="true">↗</span></h3>
+            <p>ziblonfashion.com</p>
+          </a>
+          <a class="project reveal" href="https://pangaeapathways.com/" target="_blank" rel="noopener">
+            <div class="preview" data-initial="P"><img loading="lazy" src="https://image.thum.io/get/width/900/crop/620/noanimate/https://pangaeapathways.com/" alt="Pangaea Pathways homepage" width="900" height="620"></div>
+            <div class="project-meta"><span class="tag">Website</span><span class="tag">Education</span></div>
+            <h3>Pangaea Pathways <span class="arrow" aria-hidden="true">↗</span></h3>
+            <p>pangaeapathways.com</p>
+          </a>
+          <a class="project reveal" href="https://crm.pangaeapathways.com/" target="_blank" rel="noopener">
+            <div class="preview" data-initial="CRM"><img loading="lazy" src="https://image.thum.io/get/width/900/crop/620/noanimate/https://crm.pangaeapathways.com/" alt="Pangaea CRM login screen" width="900" height="620"></div>
+            <div class="project-meta"><span class="tag">Custom CRM</span><span class="tag">Leads &amp; follow-ups</span></div>
+            <h3>Pangaea CRM <span class="arrow" aria-hidden="true">↗</span></h3>
+            <p>crm.pangaeapathways.com</p>
+          </a>
+          <a class="project reveal" href="https://www.gharoocare.com/" target="_blank" rel="noopener">
+            <div class="preview" data-initial="G"><img loading="lazy" src="https://image.thum.io/get/width/900/crop/620/noanimate/https://www.gharoocare.com/" alt="Gharoo Care homepage" width="900" height="620"></div>
+            <div class="project-meta"><span class="tag">Website</span><span class="tag">Care services</span></div>
+            <h3>Gharoo Care <span class="arrow" aria-hidden="true">↗</span></h3>
+            <p>gharoocare.com</p>
+          </a>
+          <a class="project reveal" href="https://kirticonstruction.co.in/" target="_blank" rel="noopener">
+            <div class="preview" data-initial="K"><img loading="lazy" src="https://image.thum.io/get/width/900/crop/620/noanimate/https://kirticonstruction.co.in/" alt="Kirti Construction homepage" width="900" height="620"></div>
+            <div class="project-meta"><span class="tag">Website</span><span class="tag">Construction</span></div>
+            <h3>Kirti Construction <span class="arrow" aria-hidden="true">↗</span></h3>
+            <p>kirticonstruction.co.in</p>
+          </a>
+          <a class="project reveal" href="https://alaknandadiamond.com/" target="_blank" rel="noopener">
+            <div class="preview" data-initial="A"><img loading="lazy" src="https://image.thum.io/get/width/900/crop/620/noanimate/https://alaknandadiamond.com/" alt="Alaknanda Diamond homepage" width="900" height="620"></div>
+            <div class="project-meta"><span class="tag">Website</span><span class="tag">Jewellery</span></div>
+            <h3>Alaknanda Diamond <span class="arrow" aria-hidden="true">↗</span></h3>
+            <p>alaknandadiamond.com</p>
+          </a>
+        </div>
 
-    <!-- Copyright Start -->
-    <!-- <div class="copyright-shell-1"> -->
-            <!-- <div class="copyright-content-1"> -->
-                <!-- <div class="copyright-grid-1"> -->
-                    <!-- <div class="copyright-column-1"> -->
-                        <!-- &copy; <a class="copyright-link-1" href="#">Your Site Name</a>, All Right Reserved. -->
-                    <!-- </div> -->
-                    <!-- <div class="copyright-column-2"> -->
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        <!-- Designed By <a class="copyright-link-2" href="https://htmlcodex.com">HTML Codex</a> -->
-                        <!-- <br>Distributed By: <a class="copyright-group-1" href="https://themewagon.com" target="_blank">ThemeWagon</a> -->
-                    <!-- </div> -->
-                <!-- </div> -->
-            <!-- </div> -->
-        <!-- </div> -->
-    <!-- </div> -->
-    <!-- Copyright End -->
+        <div class="more-work reveal">
+          <div>
+            <h3>More sites I’ve worked on</h3>
+            <ul class="site-list">
+              <li><a href="https://www.indianrani.com/" target="_blank" rel="noopener">Indian Rani</a></li>
+              <li><a href="https://venutaloza.com/" target="_blank" rel="noopener">Venutaloza</a></li>
+              <li><a href="https://silicakart.in/" target="_blank" rel="noopener">Silica Kart</a></li>
+              <li><a href="https://ikonikbez.in/" target="_blank" rel="noopener">Ikonik Bez</a></li>
+              <li><a href="https://korppi.cloud/" target="_blank" rel="noopener">Korppi</a></li>
+              <li><a href="https://www.strideahead.io/" target="_blank" rel="noopener">Stride Ahead</a></li>
+              <li><a href="https://crafts77bazaar.store/" target="_blank" rel="noopener">Crafts77 Bazaar</a></li>
+              <li><a href="https://www.eleosapp.com/" target="_blank" rel="noopener">Eleos App</a></li>
+              <li><a href="https://biontechindia.com/" target="_blank" rel="noopener">Biontech India</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Shopify stores in Scandinavia</h3>
+            <ul class="site-list">
+              <li><a href="https://naturesnctar.dk/" target="_blank" rel="noopener">Natures Nctar <small>DK</small></a></li>
+              <li><a href="https://collectorscage.dk/" target="_blank" rel="noopener">Collectors Cage <small>DK</small></a></li>
+              <li><a href="https://optimasport.dk/" target="_blank" rel="noopener">Optima Sport <small>DK</small></a></li>
+              <li><a href="https://nordiczen.dk/" target="_blank" rel="noopener">Nordic Zen <small>DK</small></a></li>
+              <li><a href="https://reactivate.dk/" target="_blank" rel="noopener">Reactivate <small>DK</small></a></li>
+              <li><a href="https://matmedlassen.dk/" target="_blank" rel="noopener">Mat Med Lassen <small>DK</small></a></li>
+              <li><a href="https://meotine.no/" target="_blank" rel="noopener">Meotine <small>NO</small></a></li>
+              <li><a href="https://aquitaz.se/" target="_blank" rel="noopener">Aquitaz <small>SE</small></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="wrap exp-grid">
+        <div class="section-head reveal">
+          <p class="eyebrow">Experience</p>
+          <h2>Four companies, one focus: shipping work that lasts.</h2>
+          <p class="muted">I started with Laravel, moved into Shopify and full stack work, and now build for clients directly. I care about clean UI, performance and code the next developer can pick up.</p>
+        </div>
+        <div>
+          <ol class="timeline">
+            <li class="reveal">
+              <span class="when">2025 — Present</span>
+              <h3>Full Stack Developer <span class="badge">Freelance</span></h3>
+              <p class="where">Hexafusion Infotech</p>
+            </li>
+            <li class="reveal">
+              <span class="when">2023 — 2025</span>
+              <h3>Full Stack Developer</h3>
+              <p class="where">PPlacecode Solution Pvt Ltd</p>
+            </li>
+            <li class="reveal">
+              <span class="when">2022 — 2023</span>
+              <h3>Laravel / Shopify Developer <span class="badge">Remote</span></h3>
+              <p class="where">Heaven Infotech</p>
+            </li>
+            <li class="reveal">
+              <span class="when">2021 — 2022</span>
+              <h3>Junior Laravel Developer</h3>
+              <p class="where">Welpel Infotech</p>
+            </li>
+          </ol>
+          <h3 class="sub-head reveal">Education</h3>
+          <ul class="edu">
+            <li class="reveal"><strong>Master of Computer Applications (MCA)</strong><span>Jain University · 2021 — 2023</span></li>
+            <li class="reveal"><strong>Bachelor of Computer Applications (BCA)</strong><span>Veer Narmad South Gujarat University · 2018 — 2021</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-    <!-- Back to Top -->
-    <a href="#" class="back-to-top copyright-link-3"><i class="fa fa-arrow-up"></i></a>
+    <!-- STACK -->
+    <section class="section section-alt" id="stack">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Tech stack</p>
+          <h2>Tools I use every day.</h2>
+        </div>
+        <div class="stack-grid">
+          <div class="stack-group reveal">
+            <h3>Front end</h3>
+            <ul class="pills"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>Next.js</li><li>Tailwind CSS</li></ul>
+          </div>
+          <div class="stack-group reveal">
+            <h3>Back end</h3>
+            <ul class="pills"><li>PHP</li><li>Laravel</li><li>Node.js</li><li>REST APIs</li><li>Databases &amp; auth</li></ul>
+          </div>
+          <div class="stack-group reveal">
+            <h3>Platforms</h3>
+            <ul class="pills"><li>Shopify</li><li>Liquid</li><li>WordPress</li></ul>
+          </div>
+          <div class="stack-group reveal">
+            <h3>Workflow</h3>
+            <ul class="pills"><li>Git &amp; GitHub</li><li>Vercel</li><li>AWS</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Testimonials: add back only with real, named client quotes.
+    <section class="section" id="testimonials"> ... </section> -->
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="wrap contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Have a project in mind?</h2>
+          <p class="lead">Tell me what you’re building and when you need it, and I’ll get back to you with next steps.</p>
+          <ul class="contact-links">
+            <li><a href="mailto:dishahingu3007@gmail.com"><span>Email</span>dishahingu3007@gmail.com</a></li>
+            <li><a href="https://wa.me/917874319733" target="_blank" rel="noopener"><span>WhatsApp</span>+91 78743 19733</a></li>
+            <li><a href="tel:+917874319733"><span>Call</span>+91 78743 19733</a></li>
+          </ul>
+        </div>
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="field">
+            <label for="cf-name">Your name</label>
+            <input id="cf-name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="cf-email">Your email</label>
+            <input id="cf-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="cf-type">What do you need?</label>
+            <select id="cf-type" name="type">
+              <option>Shopify store</option>
+              <option>WordPress website</option>
+              <option>Custom web app / CRM</option>
+              <option>Fixes or improvements to an existing site</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="cf-message">Project details</label>
+            <textarea id="cf-message" name="message" rows="5" required placeholder="What are you building, and by when?"></textarea>
+          </div>
+          <button class="btn" type="submit">Send message <span aria-hidden="true">→</span></button>
+          <p class="form-note">This opens your email app with the message ready to send.</p>
+        </form>
+      </div>
+    </section>
+  </main>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-    <script src="js/ui.js"></script>
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p>© <span id="year">2026</span> Disha Hingu</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/site.js" defer></script>
 </body>
-
 </html>
-
