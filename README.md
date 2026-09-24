@@ -3,8 +3,8 @@
 Static site (HTML, CSS, vanilla JS). No build step — Vercel serves it as-is.
 
 - `index.html` — all content
-- `css/styles.css` — styles (light + dark mode)
-- `js/site.js` — menu, scroll reveal, contact form
+- `css/styles.css` — styles (warm editorial theme, fully responsive)
+- `js/site.js` — menu, scroll reveals, word-by-word statement, services accordion, counters, contact form
 - `assets/` — photo, favicon, social share image
 
 **To-dos for Disha**

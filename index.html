@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Disha Hingu — Full Stack &amp; Shopify Developer</title>
   <meta name="description" content="Disha Hingu is a full stack developer with 4.5+ years building Shopify stores, WordPress sites, React front ends and custom Laravel CRMs for businesses in India and abroad.">
-  <meta name="theme-color" content="#f7f4ee" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#14111c" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f4ede3">
   <link rel="canonical" href="https://disha-portfolio-rose.vercel.app/">
 
   <meta property="og:type" content="website">
@@ -22,11 +21,10 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="assets/disha.webp">
   <link rel="stylesheet" href="css/styles.css">
 
-  <script>document.documentElement.classList.add('js')</script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -45,294 +43,310 @@
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="wrap nav">
-      <a class="brand" href="#top" aria-label="Disha Hingu — home">
-        <span class="brand-mark" aria-hidden="true">DH</span>
-        <span class="brand-name">Disha Hingu</span>
+  <!-- ================= HEADER ================= -->
+  <header class="header" id="header">
+    <div class="wrap header__inner">
+      <a href="#top" class="brand" aria-label="Disha Hingu — home">
+        <span class="brand__mark">DH</span>
+        <span class="brand__name">Disha Hingu</span>
       </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
-        <span></span><span></span>
-      </button>
-      <nav id="nav-menu" class="nav-menu" aria-label="Main">
+      <nav class="nav" id="nav" aria-label="Primary">
         <a href="#services">Services</a>
         <a href="#work">Work</a>
         <a href="#experience">Experience</a>
         <a href="#stack">Stack</a>
-        <a class="btn btn-small" href="#contact">Let’s talk</a>
+        <a href="#contact" class="nav__cta">Let’s talk</a>
       </nav>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
     </div>
   </header>
 
   <main id="main">
-    <!-- HERO -->
+    <!-- ================= HERO ================= -->
     <section class="hero" id="top">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <p class="status"><span class="dot" aria-hidden="true"></span> Available for new projects</p>
-          <h1>Websites and stores that are <mark>fast, clear</mark> and built to grow.</h1>
-          <p class="lead">I’m <strong>Disha Hingu</strong>, a full stack developer with 4.5+ years building Shopify stores, WordPress sites, React front ends and custom Laravel tools for businesses in India and abroad.</p>
-          <div class="hero-actions">
-            <a class="btn" href="#contact">Start a project <span aria-hidden="true">→</span></a>
-            <a class="btn btn-ghost" href="#work">See my work</a>
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="kicker rise"><span class="dot"></span>Available for new projects</p>
+          <h1 class="hero__title">
+            <span class="line"><span class="rise">Websites that</span></span>
+            <span class="line"><span class="rise"><em>feel</em> as good</span></span>
+            <span class="line"><span class="rise">as they <em class="accent">work.</em></span></span>
+          </h1>
+          <p class="hero__lead rise">I’m <strong>Disha Hingu</strong> — a full stack developer with 4.5+ years building Shopify stores, WordPress sites, React front ends and custom Laravel tools for businesses in India and abroad.</p>
+          <div class="hero__cta rise">
+            <a href="#contact" class="btn btn--dark">Start a project <span aria-hidden="true">→</span></a>
+            <a href="#work" class="btn btn--line">See my work</a>
             <!-- To add a CV: put the PDF at /assets/Disha-Hingu-CV.pdf and uncomment:
-            <a class="btn btn-ghost" href="assets/Disha-Hingu-CV.pdf" download>Download CV</a> -->
+            <a href="assets/Disha-Hingu-CV.pdf" class="btn btn--line" download>Download CV</a> -->
           </div>
-          <dl class="stats">
-            <div><dt>Experience</dt><dd>4.5+ yrs</dd></div>
-            <div><dt>Live sites below</dt><dd>20+</dd></div>
-            <div><dt>Specialty</dt><dd>Shopify</dd></div>
-          </dl>
         </div>
-        <div class="hero-photo">
-          <div class="photo-bg" aria-hidden="true"></div>
-          <img src="assets/disha.webp" width="760" height="1069" alt="Portrait of Disha Hingu" fetchpriority="high">
-          <div class="chip chip-a" aria-hidden="true">Shopify · Liquid</div>
-          <div class="chip chip-b" aria-hidden="true">Laravel · React</div>
+
+        <div class="hero__art">
+          <div class="arch rise">
+            <div class="arch__sun" aria-hidden="true"></div>
+            <img src="assets/disha.webp" alt="Portrait of Disha Hingu" width="760" height="1069" fetchpriority="high">
+          </div>
+          <div class="badge" aria-hidden="true">
+            <svg viewBox="0 0 200 200">
+              <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+              <text><textPath href="#circ">Shopify ✦ WordPress ✦ React ✦ Laravel ✦ </textPath></text>
+            </svg>
+            <span class="badge__core">✦</span>
+          </div>
+          <div class="note note--a"><b>4.5+</b><span>years<br>experience</span></div>
+          <div class="note note--b"><b>23</b><span>live sites<br>shipped</span></div>
+        </div>
+      </div>
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker__track">
+          <span>Shopify stores</span><i>✦</i><span><em>WordPress</em> websites</span><i>✦</i><span>React &amp; Next.js</span><i>✦</i><span><em>Custom</em> CRMs</span><i>✦</i><span>Laravel &amp; APIs</span><i>✦</i><span><em>Clean</em> web design</span><i>✦</i>
+          <span>Shopify stores</span><i>✦</i><span><em>WordPress</em> websites</span><i>✦</i><span>React &amp; Next.js</span><i>✦</i><span><em>Custom</em> CRMs</span><i>✦</i><span>Laravel &amp; APIs</span><i>✦</i><span><em>Clean</em> web design</span><i>✦</i>
         </div>
       </div>
     </section>
 
-    <!-- SERVICES -->
+    <!-- ================= STATEMENT ================= -->
+    <section class="statement">
+      <div class="wrap">
+        <p class="statement__text" data-words>I started with Laravel, moved into Shopify and full stack work, and now build for clients directly. I care about clean UI, fast pages and code the next developer can pick up — so your site keeps working long after launch.</p>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
     <section class="section" id="services">
       <div class="wrap">
-        <div class="section-head reveal">
-          <p class="eyebrow">What I do</p>
-          <h2>From first design to a site your team can run.</h2>
-        </div>
-        <div class="services">
-          <article class="card reveal">
-            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></span>
-            <h3>Shopify development</h3>
-            <p>Custom themes, sections and Liquid code, app setup and store migrations, built so you can update products and content yourself.</p>
-          </article>
-          <article class="card reveal">
-            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3.5 9h17M3.5 15h17M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18"/></svg></span>
-            <h3>WordPress websites</h3>
-            <p>Business sites that are easy to edit, with custom features where you need them and no plugin bloat where you don’t.</p>
-          </article>
-          <article class="card reveal">
-            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M9 9l-2 2 2 2M15 9l2 2-2 2"/></svg></span>
-            <h3>Front end: React &amp; Next.js</h3>
-            <p>Responsive, accessible interfaces in React, Next.js, JavaScript and Tailwind CSS that look sharp on every screen.</p>
-          </article>
-          <article class="card reveal">
-            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></span>
-            <h3>Back end &amp; APIs</h3>
-            <p>REST APIs, databases, authentication and server-side logic in Laravel, PHP and Node.js, deployed on Vercel or AWS.</p>
-          </article>
-          <article class="card reveal">
-            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
-            <h3>Custom CRMs &amp; software</h3>
-            <p>Dashboards that bring leads, customers and follow-ups into one place, shaped around how your team already works.</p>
-          </article>
-          <article class="card reveal">
-            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5L12 3Z"/></svg></span>
-            <h3>Web design</h3>
-            <p>Clean, modern layouts focused on what visitors need, so product pages and enquiry forms convert.</p>
-          </article>
-        </div>
+        <header class="head reveal">
+          <p class="eyebrow">(01) What I do</p>
+          <h2>From first design to a site <em>your team can run.</em></h2>
+        </header>
+
+        <ol class="services">
+          <li class="svc reveal">
+            <button class="svc__row" aria-expanded="true">
+              <span class="svc__n">01</span><span class="svc__t">Shopify development</span><span class="svc__i" aria-hidden="true"></span>
+            </button>
+            <div class="svc__body"><div>
+              <p>Custom themes, sections and Liquid code, app setup and store migrations — built so you can update products and content yourself.</p>
+              <ul class="tags"><li>Custom themes</li><li>Liquid</li><li>Migrations</li><li>Apps</li></ul>
+            </div></div>
+          </li>
+          <li class="svc reveal">
+            <button class="svc__row" aria-expanded="false">
+              <span class="svc__n">02</span><span class="svc__t">WordPress websites</span><span class="svc__i" aria-hidden="true"></span>
+            </button>
+            <div class="svc__body"><div>
+              <p>Business sites that are easy to edit, with custom features where you need them and no plugin bloat where you don’t.</p>
+              <ul class="tags"><li>Custom themes</li><li>Page builders</li><li>Speed</li></ul>
+            </div></div>
+          </li>
+          <li class="svc reveal">
+            <button class="svc__row" aria-expanded="false">
+              <span class="svc__n">03</span><span class="svc__t">Front end: React &amp; Next.js</span><span class="svc__i" aria-hidden="true"></span>
+            </button>
+            <div class="svc__body"><div>
+              <p>Responsive, accessible interfaces in React, Next.js, JavaScript and Tailwind CSS that look sharp on every screen.</p>
+              <ul class="tags"><li>React</li><li>Next.js</li><li>Tailwind</li></ul>
+            </div></div>
+          </li>
+          <li class="svc reveal">
+            <button class="svc__row" aria-expanded="false">
+              <span class="svc__n">04</span><span class="svc__t">Back end &amp; APIs</span><span class="svc__i" aria-hidden="true"></span>
+            </button>
+            <div class="svc__body"><div>
+              <p>REST APIs, databases, authentication and server-side logic in Laravel, PHP and Node.js, deployed on Vercel or AWS.</p>
+              <ul class="tags"><li>Laravel</li><li>PHP</li><li>Node.js</li><li>REST</li></ul>
+            </div></div>
+          </li>
+          <li class="svc reveal">
+            <button class="svc__row" aria-expanded="false">
+              <span class="svc__n">05</span><span class="svc__t">Custom CRMs &amp; software</span><span class="svc__i" aria-hidden="true"></span>
+            </button>
+            <div class="svc__body"><div>
+              <p>Dashboards that bring leads, customers and follow-ups into one place, shaped around how your team already works.</p>
+              <ul class="tags"><li>Lead tracking</li><li>Dashboards</li><li>Roles &amp; auth</li></ul>
+            </div></div>
+          </li>
+          <li class="svc reveal">
+            <button class="svc__row" aria-expanded="false">
+              <span class="svc__n">06</span><span class="svc__t">Web design</span><span class="svc__i" aria-hidden="true"></span>
+            </button>
+            <div class="svc__body"><div>
+              <p>Clean, modern layouts focused on what visitors need, so product pages and enquiry forms convert.</p>
+              <ul class="tags"><li>UI design</li><li>Responsive</li><li>Conversion</li></ul>
+            </div></div>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <!-- WORK -->
-    <section class="section section-alt" id="work">
+    <!-- ================= WORK ================= -->
+    <section class="section section--paper" id="work">
       <div class="wrap">
-        <div class="section-head reveal">
-          <p class="eyebrow">Selected work</p>
-          <h2>Live projects you can visit.</h2>
-        </div>
+        <header class="head head--split reveal">
+          <div>
+            <p class="eyebrow">(02) Selected work</p>
+            <h2>Live projects <em>you can visit.</em></h2>
+          </div>
+          <p class="head__aside">Six recent builds across fashion, education, care, construction and jewellery — plus a Custom CRM.</p>
+        </header>
 
-        <div class="work-grid">
+        <div class="work">
           <!-- Preview images are live screenshots. For best results replace each src with a static screenshot in /assets/work/ -->
-          <a class="project reveal" href="https://ziblonfashion.com/" target="_blank" rel="noopener">
-            <div class="preview" data-initial="Z"><img loading="lazy" src="https://image.thum.io/get/width/900/crop/620/noanimate/https://ziblonfashion.com/" alt="Ziblon Fashion homepage" width="900" height="620"></div>
-            <div class="project-meta"><span class="tag">Shopify</span><span class="tag">Fashion e-commerce</span></div>
-            <h3>Ziblon Fashion <span class="arrow" aria-hidden="true">↗</span></h3>
-            <p>ziblonfashion.com</p>
+          <a class="proj proj--wide reveal" href="https://ziblonfashion.com/" target="_blank" rel="noopener">
+            <figure class="proj__img" data-initial="Ziblon"><img loading="lazy" src="https://image.thum.io/get/width/1200/crop/760/noanimate/https://ziblonfashion.com/" alt="Ziblon Fashion homepage" width="1200" height="760"></figure>
+            <div class="proj__meta"><span class="proj__n">01</span><h3>Ziblon Fashion</h3><span class="proj__tags">Shopify · Fashion e-commerce</span><span class="proj__go" aria-hidden="true">↗</span></div>
           </a>
-          <a class="project reveal" href="https://pangaeapathways.com/" target="_blank" rel="noopener">
-            <div class="preview" data-initial="P"><img loading="lazy" src="https://image.thum.io/get/width/900/crop/620/noanimate/https://pangaeapathways.com/" alt="Pangaea Pathways homepage" width="900" height="620"></div>
-            <div class="project-meta"><span class="tag">Website</span><span class="tag">Education</span></div>
-            <h3>Pangaea Pathways <span class="arrow" aria-hidden="true">↗</span></h3>
-            <p>pangaeapathways.com</p>
+          <a class="proj reveal" href="https://pangaeapathways.com/" target="_blank" rel="noopener">
+            <figure class="proj__img" data-initial="Pangaea"><img loading="lazy" src="https://image.thum.io/get/width/900/crop/680/noanimate/https://pangaeapathways.com/" alt="Pangaea Pathways homepage" width="900" height="680"></figure>
+            <div class="proj__meta"><span class="proj__n">02</span><h3>Pangaea Pathways</h3><span class="proj__tags">Website · Education</span><span class="proj__go" aria-hidden="true">↗</span></div>
           </a>
-          <a class="project reveal" href="https://crm.pangaeapathways.com/" target="_blank" rel="noopener">
-            <div class="preview" data-initial="CRM"><img loading="lazy" src="https://image.thum.io/get/width/900/crop/620/noanimate/https://crm.pangaeapathways.com/" alt="Pangaea CRM login screen" width="900" height="620"></div>
-            <div class="project-meta"><span class="tag">Custom CRM</span><span class="tag">Leads &amp; follow-ups</span></div>
-            <h3>Pangaea CRM <span class="arrow" aria-hidden="true">↗</span></h3>
-            <p>crm.pangaeapathways.com</p>
+          <a class="proj proj--offset reveal" href="https://crm.pangaeapathways.com/" target="_blank" rel="noopener">
+            <figure class="proj__img" data-initial="CRM"><img loading="lazy" src="https://image.thum.io/get/width/900/crop/680/noanimate/https://crm.pangaeapathways.com/" alt="Pangaea CRM login screen" width="900" height="680"></figure>
+            <div class="proj__meta"><span class="proj__n">03</span><h3>Pangaea CRM</h3><span class="proj__tags">Custom CRM · Leads &amp; follow-ups</span><span class="proj__go" aria-hidden="true">↗</span></div>
           </a>
-          <a class="project reveal" href="https://www.gharoocare.com/" target="_blank" rel="noopener">
-            <div class="preview" data-initial="G"><img loading="lazy" src="https://image.thum.io/get/width/900/crop/620/noanimate/https://www.gharoocare.com/" alt="Gharoo Care homepage" width="900" height="620"></div>
-            <div class="project-meta"><span class="tag">Website</span><span class="tag">Care services</span></div>
-            <h3>Gharoo Care <span class="arrow" aria-hidden="true">↗</span></h3>
-            <p>gharoocare.com</p>
+          <a class="proj reveal" href="https://www.gharoocare.com/" target="_blank" rel="noopener">
+            <figure class="proj__img" data-initial="Gharoo"><img loading="lazy" src="https://image.thum.io/get/width/900/crop/680/noanimate/https://www.gharoocare.com/" alt="Gharoo Care homepage" width="900" height="680"></figure>
+            <div class="proj__meta"><span class="proj__n">04</span><h3>Gharoo Care</h3><span class="proj__tags">Website · Care services</span><span class="proj__go" aria-hidden="true">↗</span></div>
           </a>
-          <a class="project reveal" href="https://kirticonstruction.co.in/" target="_blank" rel="noopener">
-            <div class="preview" data-initial="K"><img loading="lazy" src="https://image.thum.io/get/width/900/crop/620/noanimate/https://kirticonstruction.co.in/" alt="Kirti Construction homepage" width="900" height="620"></div>
-            <div class="project-meta"><span class="tag">Website</span><span class="tag">Construction</span></div>
-            <h3>Kirti Construction <span class="arrow" aria-hidden="true">↗</span></h3>
-            <p>kirticonstruction.co.in</p>
+          <a class="proj proj--offset reveal" href="https://kirticonstruction.co.in/" target="_blank" rel="noopener">
+            <figure class="proj__img" data-initial="Kirti"><img loading="lazy" src="https://image.thum.io/get/width/900/crop/680/noanimate/https://kirticonstruction.co.in/" alt="Kirti Construction homepage" width="900" height="680"></figure>
+            <div class="proj__meta"><span class="proj__n">05</span><h3>Kirti Construction</h3><span class="proj__tags">Website · Construction</span><span class="proj__go" aria-hidden="true">↗</span></div>
           </a>
-          <a class="project reveal" href="https://alaknandadiamond.com/" target="_blank" rel="noopener">
-            <div class="preview" data-initial="A"><img loading="lazy" src="https://image.thum.io/get/width/900/crop/620/noanimate/https://alaknandadiamond.com/" alt="Alaknanda Diamond homepage" width="900" height="620"></div>
-            <div class="project-meta"><span class="tag">Website</span><span class="tag">Jewellery</span></div>
-            <h3>Alaknanda Diamond <span class="arrow" aria-hidden="true">↗</span></h3>
-            <p>alaknandadiamond.com</p>
+          <a class="proj proj--wide reveal" href="https://alaknandadiamond.com/" target="_blank" rel="noopener">
+            <figure class="proj__img" data-initial="Alaknanda"><img loading="lazy" src="https://image.thum.io/get/width/1200/crop/760/noanimate/https://alaknandadiamond.com/" alt="Alaknanda Diamond homepage" width="1200" height="760"></figure>
+            <div class="proj__meta"><span class="proj__n">06</span><h3>Alaknanda Diamond</h3><span class="proj__tags">Website · Jewellery</span><span class="proj__go" aria-hidden="true">↗</span></div>
           </a>
         </div>
 
-        <div class="more-work reveal">
-          <div>
+        <div class="more">
+          <div class="more__col reveal">
             <h3>More sites I’ve worked on</h3>
-            <ul class="site-list">
-              <li><a href="https://www.indianrani.com/" target="_blank" rel="noopener">Indian Rani</a></li>
-              <li><a href="https://venutaloza.com/" target="_blank" rel="noopener">Venutaloza</a></li>
-              <li><a href="https://silicakart.in/" target="_blank" rel="noopener">Silica Kart</a></li>
-              <li><a href="https://ikonikbez.in/" target="_blank" rel="noopener">Ikonik Bez</a></li>
-              <li><a href="https://korppi.cloud/" target="_blank" rel="noopener">Korppi</a></li>
-              <li><a href="https://www.strideahead.io/" target="_blank" rel="noopener">Stride Ahead</a></li>
-              <li><a href="https://crafts77bazaar.store/" target="_blank" rel="noopener">Crafts77 Bazaar</a></li>
-              <li><a href="https://www.eleosapp.com/" target="_blank" rel="noopener">Eleos App</a></li>
-              <li><a href="https://biontechindia.com/" target="_blank" rel="noopener">Biontech India</a></li>
+            <ul class="links">
+              <li><a href="https://www.indianrani.com/" target="_blank" rel="noopener">Indian Rani <span>↗</span></a></li>
+              <li><a href="https://venutaloza.com/" target="_blank" rel="noopener">Venutaloza <span>↗</span></a></li>
+              <li><a href="https://silicakart.in/" target="_blank" rel="noopener">Silica Kart <span>↗</span></a></li>
+              <li><a href="https://ikonikbez.in/" target="_blank" rel="noopener">Ikonik Bez <span>↗</span></a></li>
+              <li><a href="https://korppi.cloud/" target="_blank" rel="noopener">Korppi <span>↗</span></a></li>
+              <li><a href="https://www.strideahead.io/" target="_blank" rel="noopener">Stride Ahead <span>↗</span></a></li>
+              <li><a href="https://crafts77bazaar.store/" target="_blank" rel="noopener">Crafts77 Bazaar <span>↗</span></a></li>
+              <li><a href="https://www.eleosapp.com/" target="_blank" rel="noopener">Eleos App <span>↗</span></a></li>
+              <li><a href="https://biontechindia.com/" target="_blank" rel="noopener">Biontech India <span>↗</span></a></li>
             </ul>
           </div>
-          <div>
+          <div class="more__col reveal">
             <h3>Shopify stores in Scandinavia</h3>
-            <ul class="site-list">
-              <li><a href="https://naturesnctar.dk/" target="_blank" rel="noopener">Natures Nctar <small>DK</small></a></li>
-              <li><a href="https://collectorscage.dk/" target="_blank" rel="noopener">Collectors Cage <small>DK</small></a></li>
-              <li><a href="https://optimasport.dk/" target="_blank" rel="noopener">Optima Sport <small>DK</small></a></li>
-              <li><a href="https://nordiczen.dk/" target="_blank" rel="noopener">Nordic Zen <small>DK</small></a></li>
-              <li><a href="https://reactivate.dk/" target="_blank" rel="noopener">Reactivate <small>DK</small></a></li>
-              <li><a href="https://matmedlassen.dk/" target="_blank" rel="noopener">Mat Med Lassen <small>DK</small></a></li>
-              <li><a href="https://meotine.no/" target="_blank" rel="noopener">Meotine <small>NO</small></a></li>
-              <li><a href="https://aquitaz.se/" target="_blank" rel="noopener">Aquitaz <small>SE</small></a></li>
+            <ul class="links">
+              <li><a href="https://naturesnctar.dk/" target="_blank" rel="noopener">Natures Nctar <small>DK</small> <span>↗</span></a></li>
+              <li><a href="https://collectorscage.dk/" target="_blank" rel="noopener">Collectors Cage <small>DK</small> <span>↗</span></a></li>
+              <li><a href="https://optimasport.dk/" target="_blank" rel="noopener">Optima Sport <small>DK</small> <span>↗</span></a></li>
+              <li><a href="https://nordiczen.dk/" target="_blank" rel="noopener">Nordic Zen <small>DK</small> <span>↗</span></a></li>
+              <li><a href="https://reactivate.dk/" target="_blank" rel="noopener">Reactivate <small>DK</small> <span>↗</span></a></li>
+              <li><a href="https://matmedlassen.dk/" target="_blank" rel="noopener">Mat Med Lassen <small>DK</small> <span>↗</span></a></li>
+              <li><a href="https://meotine.no/" target="_blank" rel="noopener">Meotine <small>NO</small> <span>↗</span></a></li>
+              <li><a href="https://aquitaz.se/" target="_blank" rel="noopener">Aquitaz <small>SE</small> <span>↗</span></a></li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
+    <!-- ================= NUMBERS ================= -->
+    <section class="numbers">
+      <div class="wrap numbers__grid">
+        <div class="num reveal"><b data-count="4.5" data-suffix="+">0</b><span>Years building for the web</span></div>
+        <div class="num reveal"><b data-count="23">0</b><span>Live sites in this portfolio</span></div>
+        <div class="num reveal"><b data-count="4">0</b><span>Companies worked with</span></div>
+        <div class="num reveal"><b data-count="3">0</b><span>Countries in Scandinavia served</span></div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
     <section class="section" id="experience">
-      <div class="wrap exp-grid">
-        <div class="section-head reveal">
-          <p class="eyebrow">Experience</p>
-          <h2>Four companies, one focus: shipping work that lasts.</h2>
-          <p class="muted">I started with Laravel, moved into Shopify and full stack work, and now build for clients directly. I care about clean UI, performance and code the next developer can pick up.</p>
-        </div>
-        <div>
-          <ol class="timeline">
-            <li class="reveal">
-              <span class="when">2025 — Present</span>
-              <h3>Full Stack Developer <span class="badge">Freelance</span></h3>
-              <p class="where">Hexafusion Infotech</p>
-            </li>
-            <li class="reveal">
-              <span class="when">2023 — 2025</span>
-              <h3>Full Stack Developer</h3>
-              <p class="where">Placecode Solution Pvt Ltd</p>
-            </li>
-            <li class="reveal">
-              <span class="when">2022 — 2023</span>
-              <h3>Laravel / Shopify Developer <span class="badge">Remote</span></h3>
-              <p class="where">Heaven Infotech</p>
-            </li>
-            <li class="reveal">
-              <span class="when">2021 — 2022</span>
-              <h3>Junior Laravel Developer</h3>
-              <p class="where">Welpel Infotech</p>
-            </li>
-          </ol>
-          <h3 class="sub-head reveal">Education</h3>
-          <ul class="edu">
-            <li class="reveal"><strong>Master of Computer Applications (MCA)</strong><span>Jain University · 2021 — 2023</span></li>
-            <li class="reveal"><strong>Bachelor of Computer Applications (BCA)</strong><span>Veer Narmad South Gujarat University · 2018 — 2021</span></li>
-          </ul>
+      <div class="wrap exp">
+        <header class="head reveal">
+          <p class="eyebrow">(03) Experience</p>
+          <h2>Four companies, <em>one focus:</em> shipping work that lasts.</h2>
+        </header>
+
+        <ol class="roles">
+          <li class="role reveal"><span class="role__yr">2025 — Now</span><div class="role__main"><h3>Full Stack Developer</h3><p>Hexafusion Infotech</p></div><span class="role__tag">Freelance</span></li>
+          <li class="role reveal"><span class="role__yr">2023 — 2025</span><div class="role__main"><h3>Full Stack Developer</h3><p>Placecode Solution Pvt Ltd</p></div><span class="role__tag">Full-time</span></li>
+          <li class="role reveal"><span class="role__yr">2022 — 2023</span><div class="role__main"><h3>Laravel / Shopify Developer</h3><p>Heaven Infotech</p></div><span class="role__tag">Remote</span></li>
+          <li class="role reveal"><span class="role__yr">2021 — 2022</span><div class="role__main"><h3>Junior Laravel Developer</h3><p>Welpel Infotech</p></div><span class="role__tag">Full-time</span></li>
+        </ol>
+
+        <div class="edu">
+          <p class="eyebrow reveal">Education</p>
+          <div class="edu__grid">
+            <div class="edu__card reveal"><span class="edu__yr">2021 — 2023</span><h3>Master of Computer Applications</h3><p>Jain University</p></div>
+            <div class="edu__card reveal"><span class="edu__yr">2018 — 2021</span><h3>Bachelor of Computer Applications</h3><p>Veer Narmad South Gujarat University</p></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- STACK -->
-    <section class="section section-alt" id="stack">
+    <!-- ================= STACK ================= -->
+    <section class="section section--paper" id="stack">
       <div class="wrap">
-        <div class="section-head reveal">
-          <p class="eyebrow">Tech stack</p>
-          <h2>Tools I use every day.</h2>
-        </div>
-        <div class="stack-grid">
-          <div class="stack-group reveal">
-            <h3>Front end</h3>
-            <ul class="pills"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>Next.js</li><li>Tailwind CSS</li></ul>
-          </div>
-          <div class="stack-group reveal">
-            <h3>Back end</h3>
-            <ul class="pills"><li>PHP</li><li>Laravel</li><li>Node.js</li><li>REST APIs</li><li>Databases &amp; auth</li></ul>
-          </div>
-          <div class="stack-group reveal">
-            <h3>Platforms</h3>
-            <ul class="pills"><li>Shopify</li><li>Liquid</li><li>WordPress</li></ul>
-          </div>
-          <div class="stack-group reveal">
-            <h3>Workflow</h3>
-            <ul class="pills"><li>Git &amp; GitHub</li><li>Vercel</li><li>AWS</li></ul>
-          </div>
+        <header class="head reveal">
+          <p class="eyebrow">(04) Tech stack</p>
+          <h2>Tools I use <em>every day.</em></h2>
+        </header>
+        <div class="stack">
+          <div class="stack__col reveal"><h3>Front end</h3><ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>Next.js</li><li>Tailwind CSS</li></ul></div>
+          <div class="stack__col reveal"><h3>Back end</h3><ul><li>PHP</li><li>Laravel</li><li>Node.js</li><li>REST APIs</li><li>Databases &amp; auth</li></ul></div>
+          <div class="stack__col reveal"><h3>Platforms</h3><ul><li>Shopify</li><li>Liquid</li><li>WordPress</li></ul></div>
+          <div class="stack__col reveal"><h3>Workflow</h3><ul><li>Git &amp; GitHub</li><li>Vercel</li><li>AWS</li></ul></div>
         </div>
       </div>
     </section>
 
-    <!-- Testimonials: add back only with real, named client quotes.
-    <section class="section" id="testimonials"> ... </section> -->
+    <!-- Testimonials: add back only with real, named client quotes. -->
 
-    <!-- CONTACT -->
-    <section class="section contact" id="contact">
-      <div class="wrap contact-grid">
-        <div class="reveal">
-          <p class="eyebrow">Contact</p>
-          <h2>Have a project in mind?</h2>
-          <p class="lead">Tell me what you’re building and when you need it, and I’ll get back to you with next steps.</p>
-          <ul class="contact-links">
-            <li><a href="mailto:dishahingu3007@gmail.com"><span>Email</span>dishahingu3007@gmail.com</a></li>
-            <li><a href="https://wa.me/917874319733" target="_blank" rel="noopener"><span>WhatsApp</span>+91 78743 19733</a></li>
-            <li><a href="tel:+917874319733"><span>Call</span>+91 78743 19733</a></li>
+    <!-- ================= CONTACT ================= -->
+    <section class="contact" id="contact">
+      <div class="wrap contact__grid">
+        <div class="contact__intro">
+          <p class="eyebrow eyebrow--light reveal">(05) Contact</p>
+          <h2 class="reveal">Have a project <em>in mind?</em></h2>
+          <p class="reveal">Tell me what you’re building and when you need it, and I’ll get back to you with next steps.</p>
+          <ul class="channels reveal">
+            <li><span>Email</span><a href="mailto:dishahingu3007@gmail.com">dishahingu3007@gmail.com</a></li>
+            <li><span>WhatsApp</span><a href="https://wa.me/917874319733" target="_blank" rel="noopener">+91 78743 19733</a></li>
+            <li><span>Call</span><a href="tel:+917874319733">+91 78743 19733</a></li>
           </ul>
         </div>
-        <form class="contact-form reveal" id="contact-form" novalidate>
-          <div class="field">
-            <label for="cf-name">Your name</label>
-            <input id="cf-name" name="name" autocomplete="name" required>
-          </div>
-          <div class="field">
-            <label for="cf-email">Your email</label>
-            <input id="cf-email" name="email" type="email" autocomplete="email" required>
-          </div>
-          <div class="field">
-            <label for="cf-type">What do you need?</label>
-            <select id="cf-type" name="type">
-              <option>Shopify store</option>
-              <option>WordPress website</option>
-              <option>Custom web app / CRM</option>
-              <option>Fixes or improvements to an existing site</option>
-              <option>Something else</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="cf-message">Project details</label>
-            <textarea id="cf-message" name="message" rows="5" required placeholder="What are you building, and by when?"></textarea>
-          </div>
-          <button class="btn" type="submit">Send message <span aria-hidden="true">→</span></button>
-          <p class="form-note">This opens your email app with the message ready to send.</p>
+
+        <form class="form reveal" id="contact-form" novalidate>
+          <div class="field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="email">Your email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+          <fieldset class="field">
+            <legend>What do you need?</legend>
+            <div class="chips">
+              <label><input type="radio" name="type" value="Shopify store" checked><span>Shopify store</span></label>
+              <label><input type="radio" name="type" value="WordPress website"><span>WordPress site</span></label>
+              <label><input type="radio" name="type" value="Custom web app / CRM"><span>Web app / CRM</span></label>
+              <label><input type="radio" name="type" value="Fixes or improvements to an existing site"><span>Fix / improve a site</span></label>
+              <label><input type="radio" name="type" value="Something else"><span>Something else</span></label>
+            </div>
+          </fieldset>
+          <div class="field"><label for="message">Project details</label><textarea id="message" name="message" rows="4" required></textarea></div>
+          <button type="submit" class="btn btn--sun btn--block">Send message <span aria-hidden="true">→</span></button>
+          <p class="form__note">This opens your email app with the message ready to send.</p>
         </form>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap footer-row">
-      <p>© <span id="year">2026</span> Disha Hingu</p>
-      <a href="#top">Back to top ↑</a>
+  <footer class="footer">
+    <div class="wrap">
+      <p class="footer__big" aria-hidden="true">Disha <em>Hingu</em></p>
+      <div class="footer__row">
+        <span>© <span id="year">2026</span> Disha Hingu</span>
+        <span>Full stack &amp; Shopify developer · India</span>
+        <a href="#top">Back to top ↑</a>
+      </div>
     </div>
   </footer>
 
