@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Disha Hingu · Full stack developer</title>
-  <meta name="description" content="I'm Disha Hingu, a full stack developer and CTO at Hexafusion Infotech. I work with Laravel, Shopify, WordPress and React.">
-  <meta name="theme-color" content="#faf6f0">
+  <meta name="description" content="Disha Hingu is a full stack developer and CTO at Hexafusion Infotech, working with Laravel, Shopify, WordPress and React.">
+  <meta name="theme-color" content="#f8f2ea">
   <link rel="canonical" href="https://disha-portfolio-rose.vercel.app/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://disha-portfolio-rose.vercel.app/">
@@ -21,125 +21,229 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add("js")</script>
 
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Person","name":"Disha Hingu","jobTitle":"CTO, Hexafusion Infotech","url":"https://disha-portfolio-rose.vercel.app/","image":"https://disha-portfolio-rose.vercel.app/assets/disha.webp","email":"mailto:dishahingu3007@gmail.com","telephone":"+91 78743 19733","sameAs":["https://www.linkedin.com/in/disha-hingu-132a2a248"],"worksFor":{"@type":"Organization","name":"Hexafusion Infotech","url":"https://hexafusion-infotech.vercel.app/"},"alumniOf":["Jain University","Veer Narmad South Gujarat University"]}
   </script>
 </head>
 <body>
-  <header class="top">
-    <a class="top__name" href="#">Disha Hingu</a>
-    <nav class="top__nav" aria-label="Sections">
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="top" id="top">
+    <div class="wrap top__in">
+      <a class="mono" href="#top" aria-label="Disha Hingu, back to top">
+        <span class="mono__badge">DH</span>
+        <span class="mono__name">Disha Hingu</span>
+      </a>
+      <nav class="top__nav" aria-label="Sections">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a class="top__cta" href="#contact">Get in touch</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="wrap">
+  <main>
+    <!-- Intro -->
     <section class="intro">
-      <img class="intro__photo" src="assets/disha.webp" alt="Disha Hingu" width="760" height="1069">
-      <div>
-        <h1>Hi, I'm Disha.</h1>
-        <p>I'm a full stack developer and the CTO at <a href="https://hexafusion-infotech.vercel.app/">Hexafusion Infotech</a> in Surat. I started out writing Laravel back ends in 2021, picked up Shopify and front-end work along the way, and now I spend my time between building client projects and deciding how we build them.</p>
-        <p>Most of what I make is practical: online stores, business websites, and admin tools like CRMs that a team opens every morning. I like code that's boring to maintain, in a good way.</p>
-        <p class="intro__links">
-          <a href="mailto:dishahingu3007@gmail.com">Email</a>
-          <a href="https://www.linkedin.com/in/disha-hingu-132a2a248">LinkedIn</a>
-          <a href="https://wa.me/917874319733">WhatsApp</a>
-        </p>
-      </div>
-    </section>
-
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <p class="note">A few things I've worked on recently. Most of them were built with the team at Hexafusion.</p>
-
-      <div class="grid">
-        <figure class="proj">
-          <a href="https://crm.pangaeapathways.com/" rel="noopener"><img src="assets/work/pangaea-crm.webp" alt="Pangaea CRM login screen" width="1080" height="675" loading="lazy"></a>
-          <figcaption><a href="https://crm.pangaeapathways.com/" rel="noopener">Pangaea CRM</a> A custom CRM a study-abroad consultancy uses to track student leads and follow-ups.</figcaption>
-        </figure>
-        <figure class="proj">
-          <a href="https://pangaeapathways.com/" rel="noopener"><img src="assets/work/pangaea.webp" alt="Pangaea Pathways homepage" width="1080" height="675" loading="lazy"></a>
-          <figcaption><a href="https://pangaeapathways.com/" rel="noopener">Pangaea Pathways</a> The same consultancy's public website, with course and destination pages.</figcaption>
-        </figure>
-        <figure class="proj">
-          <a href="https://www.strideahead.io/" rel="noopener"><img src="assets/work/strideahead.webp" alt="Stride Ahead homepage" width="1080" height="675" loading="lazy"></a>
-          <figcaption><a href="https://www.strideahead.io/" rel="noopener">Stride Ahead</a> Career assessment platform for school students, built with Next.js.</figcaption>
-        </figure>
-        <figure class="proj">
-          <a href="https://www.kirticonstruction.co.in/" rel="noopener"><img src="assets/work/kirti.webp" alt="Kirti Construction homepage" width="1080" height="675" loading="lazy"></a>
-          <figcaption><a href="https://www.kirticonstruction.co.in/" rel="noopener">Kirti Construction</a> Company website for a firm that restores heritage buildings.</figcaption>
-        </figure>
-        <figure class="proj">
-          <a href="https://aquitaz.se/" rel="noopener"><img src="assets/work/aquitaz.webp" alt="Aquitaz homepage" width="1080" height="675" loading="lazy"></a>
-          <figcaption><a href="https://aquitaz.se/" rel="noopener">Aquitaz</a> Swedish Shopify store for trading card games like Pokémon and One Piece.</figcaption>
-        </figure>
-        <figure class="proj">
-          <a href="https://ziblonfashion.com/" rel="noopener"><img src="assets/work/ziblon.webp" alt="Ziblon Fashion homepage" width="1080" height="675" loading="lazy"></a>
-          <figcaption><a href="https://ziblonfashion.com/" rel="noopener">Ziblon Fashion</a> Shopify store for an ethnic wear label.</figcaption>
-        </figure>
-      </div>
-
-      <div class="more">
-        <div>
-          <h3>Shopify stores in Scandinavia</h3>
-          <ul>
-            <li><a href="https://collectorscage.dk/" rel="noopener">Collectors Cage</a> <span>Denmark</span></li>
-            <li><a href="https://nordiczen.dk/" rel="noopener">Nordic Zen</a> <span>Denmark</span></li>
-            <li><a href="https://optimasport.dk/" rel="noopener">Optima Sport</a> <span>Denmark</span></li>
-            <li><a href="https://matmedlassen.dk/" rel="noopener">Mat Med Lassen</a> <span>Denmark</span></li>
-            <li><a href="https://naturesnctar.dk/" rel="noopener">Natures Nctar</a> <span>Denmark</span></li>
-            <li><a href="https://reactivate.dk/" rel="noopener">Reactivate</a> <span>Denmark</span></li>
-            <li><a href="https://meotine.no/" rel="noopener">Meotine</a> <span>Norway</span></li>
-          </ul>
+      <div class="wrap intro__grid">
+        <div class="intro__copy">
+          <p class="kicker">Full stack developer · CTO at Hexafusion Infotech</p>
+          <h1>I build online stores, websites <em>and the tools behind them.</em></h1>
+          <p class="intro__lead">Hi, I'm Disha. I started out writing Laravel back ends in 2021, added Shopify and front-end work along the way, and today I lead the technical side of <a href="https://hexafusion-infotech.vercel.app/">Hexafusion Infotech</a> in Surat.</p>
+          <div class="intro__actions">
+            <a class="btn btn--fill" href="#projects">View projects</a>
+            <a class="btn btn--ghost" href="https://www.linkedin.com/in/disha-hingu-132a2a248">LinkedIn ↗</a>
+          </div>
         </div>
-        <div>
-          <h3>Other sites</h3>
-          <ul>
-            <li><a href="https://alaknandadiamond.com/" rel="noopener">Alaknanda Diamond</a> <span>Jewellery</span></li>
-            <li><a href="https://www.indianrani.com/" rel="noopener">Indian Rani</a> <span>Ethnic wear</span></li>
-            <li><a href="https://venutaloza.com/" rel="noopener">Venutaloza</a> <span>Kidswear</span></li>
-            <li><a href="https://silicakart.in/" rel="noopener">Silica Kart</a> <span>Home storage</span></li>
-            <li><a href="https://biontechindia.com/" rel="noopener">Biontech India</a> <span>Water ionisers</span></li>
-            <li><a href="https://takeimpact.com/" rel="noopener">Take Impact</a> <span>Wellness</span></li>
-            <li><a href="https://www.eleosapp.com/" rel="noopener">Eleos App</a> <span>Web app</span></li>
-          </ul>
+        <div class="intro__visual">
+          <div class="arch">
+            <img src="assets/disha.webp" alt="Disha Hingu" width="760" height="1069" fetchpriority="high">
+          </div>
+          <div class="badge badge--a"><strong>4.5+</strong><span>years building<br>for the web</span></div>
+          <div class="badge badge--b"><strong>4</strong><span>companies,<br>one focus</span></div>
         </div>
       </div>
     </section>
 
-    <section id="experience" class="section">
-      <h2>Experience</h2>
-      <dl class="jobs">
-        <dt>2025 – now</dt>
-        <dd><strong>CTO, Hexafusion Infotech</strong> I look after how our projects are built: picking the stack, reviewing code and taking the harder back-end pieces myself.</dd>
-        <dt>2023 – 2025</dt>
-        <dd><strong>Full stack developer, Placecode Solution Pvt Ltd</strong> Full-time, mostly Laravel and Shopify work.</dd>
-        <dt>2022 – 2023</dt>
-        <dd><strong>Laravel / Shopify developer, Heaven Infotech</strong> Remote. This is where I started doing Shopify work alongside Laravel.</dd>
-        <dt>2021 – 2022</dt>
-        <dd><strong>Junior Laravel developer, Welpel Infotech</strong> My first job, on a Laravel team.</dd>
-      </dl>
+    <!-- Stack ribbon -->
+    <div class="ribbon" aria-hidden="true">
+      <div class="ribbon__track">
+        <span>Laravel</span><i>✦</i><span>Shopify</span><i>✦</i><span>WordPress</span><i>✦</i><span>React</span><i>✦</i><span>Next.js</span><i>✦</i><span>PHP</span><i>✦</i><span>Tailwind</span><i>✦</i><span>Custom CRMs</span><i>✦</i>
+        <span>Laravel</span><i>✦</i><span>Shopify</span><i>✦</i><span>WordPress</span><i>✦</i><span>React</span><i>✦</i><span>Next.js</span><i>✦</i><span>PHP</span><i>✦</i><span>Tailwind</span><i>✦</i><span>Custom CRMs</span><i>✦</i>
+      </div>
+    </div>
 
-      <h3 class="small-head">Education</h3>
-      <p>MCA from Jain University (2021 – 2023), and a BCA from Veer Narmad South Gujarat University (2018 – 2021).</p>
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="sec-head__no">01</span>
+          <div>
+            <h2>Selected projects</h2>
+            <p>Live work I've been part of. Most of the recent builds were done with the team at Hexafusion.</p>
+          </div>
+        </header>
 
-      <h3 class="small-head">Tools</h3>
-      <p>PHP and Laravel for most back ends, Node.js when a project needs it. React, Next.js and Tailwind on the front end. Shopify (Liquid) and WordPress for stores and content sites. Git, Vercel and AWS for everything around that.</p>
+        <article class="feature reveal">
+          <div class="feature__shots">
+            <a class="shot shot--main" href="https://pangaeapathways.com/" rel="noopener" aria-label="Visit Pangaea Pathways">
+              <img src="assets/work/pangaea.webp" alt="Pangaea Pathways website" width="1080" height="675" loading="lazy">
+            </a>
+            <a class="shot shot--float" href="https://crm.pangaeapathways.com/" rel="noopener" aria-label="Visit Pangaea CRM">
+              <img src="assets/work/pangaea-crm.webp" alt="Pangaea CRM sign-in screen" width="1080" height="675" loading="lazy">
+            </a>
+          </div>
+          <div class="feature__text">
+            <p class="label">Website + custom CRM · Education</p>
+            <h3>Pangaea Pathways</h3>
+            <p>A study-abroad consultancy needed two things: a public website for students, and an internal CRM so their counsellors could stop tracking leads in spreadsheets. The CRM handles enquiries, follow-ups and who is working on which student.</p>
+            <ul class="chips"><li>Laravel</li><li>PHP</li><li>CRM</li><li>Website</li></ul>
+            <p class="links"><a href="https://pangaeapathways.com/" rel="noopener">Website ↗</a><a href="https://crm.pangaeapathways.com/" rel="noopener">CRM ↗</a></p>
+          </div>
+        </article>
+
+        <div class="cards">
+          <a class="card reveal" href="https://www.strideahead.io/" rel="noopener">
+            <img src="assets/work/strideahead.webp" alt="" width="1080" height="675" loading="lazy">
+            <span class="card__label">Next.js · EdTech</span>
+            <span class="card__title">Stride Ahead</span>
+            <span class="card__text">Career assessment platform that helps school students understand their strengths.</span>
+          </a>
+          <a class="card reveal" href="https://www.kirticonstruction.co.in/" rel="noopener">
+            <img src="assets/work/kirti.webp" alt="" width="1080" height="675" loading="lazy">
+            <span class="card__label">Website · Construction</span>
+            <span class="card__title">Kirti Construction</span>
+            <span class="card__text">Company website for a firm that restores heritage buildings.</span>
+          </a>
+          <a class="card reveal" href="https://aquitaz.se/" rel="noopener">
+            <img src="assets/work/aquitaz.webp" alt="" width="1080" height="675" loading="lazy">
+            <span class="card__label">Shopify · Sweden</span>
+            <span class="card__title">Aquitaz</span>
+            <span class="card__text">Trading card game store for Pokémon, One Piece and more.</span>
+          </a>
+          <a class="card reveal" href="https://ziblonfashion.com/" rel="noopener">
+            <img src="assets/work/ziblon.webp" alt="" width="1080" height="675" loading="lazy">
+            <span class="card__label">Shopify · India</span>
+            <span class="card__title">Ziblon Fashion</span>
+            <span class="card__text">Online store for an Indian ethnic wear label.</span>
+          </a>
+        </div>
+
+        <div class="nordic reveal">
+          <div class="nordic__head">
+            <h3>Shopify stores in Scandinavia</h3>
+            <p>Danish, Norwegian and Swedish brands, each in their own language.</p>
+          </div>
+          <ul class="nordic__grid">
+            <li><a href="https://collectorscage.dk/" rel="noopener"><img src="assets/work/collectorscage.webp" alt="" width="1080" height="675" loading="lazy"><span>Collectors Cage <em>DK</em></span></a></li>
+            <li><a href="https://nordiczen.dk/" rel="noopener"><img src="assets/work/nordiczen.webp" alt="" width="1080" height="675" loading="lazy"><span>Nordic Zen <em>DK</em></span></a></li>
+            <li><a href="https://optimasport.dk/" rel="noopener"><img src="assets/work/optimasport.webp" alt="" width="1080" height="675" loading="lazy"><span>Optima Sport <em>DK</em></span></a></li>
+            <li><a href="https://matmedlassen.dk/" rel="noopener"><img src="assets/work/matmedlassen.webp" alt="" width="1080" height="675" loading="lazy"><span>Mat Med Lassen <em>DK</em></span></a></li>
+          </ul>
+          <p class="nordic__more">Also <a href="https://naturesnctar.dk/" rel="noopener">Natures Nctar</a>, <a href="https://reactivate.dk/" rel="noopener">Reactivate</a> (Denmark) and <a href="https://meotine.no/" rel="noopener">Meotine</a> (Norway).</p>
+        </div>
+
+        <div class="others">
+          <h3>Other sites I've worked on</h3>
+          <ul>
+            <li><a href="https://alaknandadiamond.com/" rel="noopener">Alaknanda Diamond</a><span>Jewellery</span></li>
+            <li><a href="https://www.indianrani.com/" rel="noopener">Indian Rani</a><span>Ethnic wear</span></li>
+            <li><a href="https://venutaloza.com/" rel="noopener">Venutaloza</a><span>Kidswear</span></li>
+            <li><a href="https://silicakart.in/" rel="noopener">Silica Kart</a><span>Home storage</span></li>
+            <li><a href="https://biontechindia.com/" rel="noopener">Biontech India</a><span>Water ionisers</span></li>
+            <li><a href="https://takeimpact.com/" rel="noopener">Take Impact</a><span>Wellness</span></li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>The easiest way to reach me is email: <a href="mailto:dishahingu3007@gmail.com">dishahingu3007@gmail.com</a>. You can also message me on WhatsApp at <a href="https://wa.me/917874319733">+91 78743 19733</a>, or find me on <a href="https://www.linkedin.com/in/disha-hingu-132a2a248">LinkedIn</a>.</p>
-      <p>If it's about a project for your business, it's worth looking at <a href="https://hexafusion-infotech.vercel.app/">Hexafusion Infotech</a> too, where I work with <a href="https://vmeet-portfolio.vercel.app/">Vasoya Meet</a> and the rest of the team.</p>
+    <!-- Skills -->
+    <section class="section section--soft" id="skills">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="sec-head__no">02</span>
+          <div>
+            <h2>What I work on</h2>
+            <p>Mostly the parts of a project that have to keep running after launch.</p>
+          </div>
+        </header>
+        <div class="skills">
+          <div class="skill reveal">
+            <span class="skill__icon" aria-hidden="true">{ }</span>
+            <h3>Back ends &amp; CRMs</h3>
+            <p>REST APIs, databases, authentication and admin panels. Laravel and PHP for most projects, Node.js when it fits better.</p>
+            <ul class="chips"><li>Laravel</li><li>PHP</li><li>Node.js</li><li>MySQL</li></ul>
+          </div>
+          <div class="skill reveal">
+            <span class="skill__icon" aria-hidden="true">◇</span>
+            <h3>Shopify &amp; WordPress</h3>
+            <p>Custom themes and sections, store setup and migrations, and business sites that are easy for the client to edit.</p>
+            <ul class="chips"><li>Shopify</li><li>Liquid</li><li>WordPress</li></ul>
+          </div>
+          <div class="skill reveal">
+            <span class="skill__icon" aria-hidden="true">▢</span>
+            <h3>Front ends</h3>
+            <p>Responsive interfaces in React and Next.js, styled with Tailwind, that work well on every screen size.</p>
+            <ul class="chips"><li>React</li><li>Next.js</li><li>Tailwind</li><li>JavaScript</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="sec-head__no">03</span>
+          <div>
+            <h2>Experience</h2>
+            <p>Four companies since 2021, from junior developer to CTO.</p>
+          </div>
+        </header>
+        <div class="exp">
+          <ol class="jobs">
+            <li class="reveal"><span class="jobs__when">2025 – now</span><div><h3>CTO</h3><p class="jobs__where">Hexafusion Infotech · Surat</p><p>Leading the technical side: choosing the stack, reviewing code and building the harder back-end parts myself.</p></div></li>
+            <li class="reveal"><span class="jobs__when">2023 – 2025</span><div><h3>Full stack developer</h3><p class="jobs__where">Placecode Solution Pvt Ltd · Full-time</p><p>Laravel and Shopify projects.</p></div></li>
+            <li class="reveal"><span class="jobs__when">2022 – 2023</span><div><h3>Laravel / Shopify developer</h3><p class="jobs__where">Heaven Infotech · Remote</p><p>Where I started doing Shopify work alongside Laravel.</p></div></li>
+            <li class="reveal"><span class="jobs__when">2021 – 2022</span><div><h3>Junior Laravel developer</h3><p class="jobs__where">Welpel Infotech · Full-time</p><p>My first developer job.</p></div></li>
+          </ol>
+          <aside class="edu reveal">
+            <h3>Education</h3>
+            <div><strong>Master of Computer Applications</strong><span>Jain University · 2021 – 2023</span></div>
+            <div><strong>Bachelor of Computer Applications</strong><span>Veer Narmad South Gujarat University · 2018 – 2021</span></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="wrap contact__grid">
+        <div>
+          <p class="kicker kicker--light">Contact</p>
+          <h2>Have a project <em>in mind?</em></h2>
+          <p class="contact__lead">Tell me what you're building and when you need it. For business projects you can also reach the whole team through <a href="https://hexafusion-infotech.vercel.app/">Hexafusion Infotech</a>.</p>
+        </div>
+        <ul class="contact__list">
+          <li><span>Email</span><a href="mailto:dishahingu3007@gmail.com">dishahingu3007@gmail.com</a></li>
+          <li><span>WhatsApp</span><a href="https://wa.me/917874319733">+91 78743 19733</a></li>
+          <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/disha-hingu-132a2a248">disha-hingu</a></li>
+          <li><span>Based in</span><p>Surat, Gujarat, India</p></li>
+        </ul>
+      </div>
+      <div class="wrap contact__sign" aria-hidden="true">Disha <em>Hingu</em></div>
     </section>
   </main>
 
-  <footer class="foot">© <span id="year">2026</span> Disha Hingu</footer>
+  <footer class="foot">
+    <div class="wrap foot__in">
+      <span>© <span id="year">2026</span> Disha Hingu</span>
+      <span>Works with <a href="https://vmeet-portfolio.vercel.app/">Vasoya Meet</a> at <a href="https://hexafusion-infotech.vercel.app/">Hexafusion Infotech</a></span>
+    </div>
+  </footer>
 
   <script src="js/site.js" defer></script>
 </body>
